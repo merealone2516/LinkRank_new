@@ -125,13 +125,4 @@ Baseline implementations are not redistributed here; see
 original replication packages. Baseline result summaries are included under
 `results/`.
 
-## Citation
 
-```bibtex
-@article{kumar2026linkrank,
-  title   = {LinkRank: A Learning-to-Rank Framework for One-to-Many Issue--Commit Traceability},
-  author  = {Kumar, Abhishek and Mondal, Tuhin and Das, Partha Pratim and Chakrabarti, Partha Pratim},
-  journal = {Information and Software Technology},
-  year    = {2026}
-}
-```
