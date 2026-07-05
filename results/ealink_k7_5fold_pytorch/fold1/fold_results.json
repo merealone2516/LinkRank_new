@@ -1,0 +1,15 @@
+{
+  "fold": 1,
+  "train_issues": 230,
+  "test_issues": 61,
+  "actual_epochs": 15,
+  "best_val_loss": 2.617911891804801,
+  "known_k_f1": 21.49,
+  "abs_mm_f1": 13.07,
+  "abs_mm_th": 0.94,
+  "rel_f1": 16.81,
+  "rel_gamma": 0.98,
+  "mrr": 27.84,
+  "ndcg_at_k": 21.99,
+  "p_at_k": 21.49
+}

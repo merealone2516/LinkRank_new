@@ -1,0 +1,4 @@
+Setting,Precision,Recall,F1
+Known-K,73.09,73.09,73.09
+No-K (ABS-mm),75.04,63.04,63.28
+No-K (REL),67.84,71.57,63.37

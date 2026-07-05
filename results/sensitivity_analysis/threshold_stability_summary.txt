@@ -1,0 +1,55 @@
+Threshold Sensitivity Analysis — LinkRank
+======================================================================
+
+Overview:
+  For each fold, τ (ABS-mm) and γ (REL) are independently tuned on
+  the dev set via grid search. This table shows the optimal values
+  found across folds, demonstrating stability.
+
+  ABS-mm threshold τ: score_mm >= τ → predict link
+  REL threshold γ: score >= γ × max_score → predict link
+
+Dataset      | Config    | τ mean±std     | τ range    | γ mean±std     | γ range    | τ dev F1 | γ dev F1
+----------------------------------------------------------------------------------------------------
+pytorch      | no_gemma  | 0.89±0.04    | 0.84-0.94  | 0.76±0.09    | 0.66-0.88  |   78.0% |   78.5%
+beam         | no_gemma  | 0.89±0.05    | 0.82-0.94  | 0.67±0.14    | 0.50-0.92  |   64.3% |   65.1%
+dubbo        | no_gemma  | 0.87±0.07    | 0.74-0.92  | 0.70±0.15    | 0.42-0.84  |   75.6% |   75.0%
+iceberg      | no_gemma  | 0.82±0.07    | 0.70-0.90  | 0.62±0.16    | 0.36-0.78  |   73.9% |   72.8%
+datafusion   | no_gemma  | 0.81±0.04    | 0.78-0.88  | 0.63±0.10    | 0.50-0.76  |   59.7% |   60.0%
+mxnet        | no_gemma  | 0.86±0.04    | 0.80-0.92  | 0.68±0.07    | 0.60-0.78  |   62.6% |   63.6%
+
+
+======================================================================
+Per-Fold Details
+======================================================================
+
+
+PYTORCH:
+  [no_gemma]
+    τ per fold: [0.86, 0.92, 0.88, 0.94, 0.84]
+    γ per fold: [0.68, 0.84, 0.66, 0.88, 0.74]
+
+BEAM:
+  [no_gemma]
+    τ per fold: [0.94, 0.82, 0.9, 0.94, 0.86]
+    γ per fold: [0.92, 0.6, 0.5, 0.68, 0.66]
+
+DUBBO:
+  [no_gemma]
+    τ per fold: [0.9, 0.74, 0.92, 0.92, 0.86]
+    γ per fold: [0.72, 0.42, 0.84, 0.84, 0.68]
+
+ICEBERG:
+  [no_gemma]
+    τ per fold: [0.9, 0.78, 0.88, 0.7, 0.84]
+    γ per fold: [0.78, 0.5, 0.74, 0.36, 0.7]
+
+DATAFUSION:
+  [no_gemma]
+    τ per fold: [0.78, 0.8, 0.88, 0.82, 0.78]
+    γ per fold: [0.5, 0.6, 0.74, 0.76, 0.56]
+
+MXNET:
+  [no_gemma]
+    τ per fold: [0.92, 0.86, 0.86, 0.8, 0.88]
+    γ per fold: [0.76, 0.66, 0.78, 0.6, 0.62]

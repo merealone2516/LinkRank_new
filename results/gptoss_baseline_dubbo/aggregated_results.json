@@ -1,0 +1,42 @@
+{
+  "dataset": "dubbo",
+  "model": "gpt-oss-120b-mxfp4-00001-of-00003.gguf",
+  "results": {
+    "Known-K": {
+      "P_mean": 53.79,
+      "P_std": 5.21,
+      "R_mean": 53.79,
+      "R_std": 5.21,
+      "F1_mean": 53.79,
+      "F1_std": 5.21,
+      "MRR_mean": 55.41,
+      "MRR_std": 5.26,
+      "NDCG_mean": 53.84,
+      "NDCG_std": 5.39
+    },
+    "Unknown-K-abs": {
+      "P_mean": 68.76,
+      "P_std": 6.95,
+      "R_mean": 58.22,
+      "R_std": 4.92,
+      "F1_mean": 59.81,
+      "F1_std": 5.88,
+      "MRR_mean": 70.42,
+      "MRR_std": 7.3,
+      "NDCG_mean": 57.52,
+      "NDCG_std": 7.51
+    },
+    "Unknown-K-rel": {
+      "P_mean": 42.68,
+      "P_std": 7.55,
+      "R_mean": 39.62,
+      "R_std": 7.61,
+      "F1_mean": 39.16,
+      "F1_std": 7.43,
+      "MRR_mean": 46.38,
+      "MRR_std": 8.42,
+      "NDCG_mean": 39.75,
+      "NDCG_std": 7.77
+    }
+  }
+}

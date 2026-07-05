@@ -1,0 +1,965 @@
+2026-04-10 10:38:07,507 | INFO | Device: cuda, CUDA: True
+2026-04-10 10:38:07,508 | INFO | ▶ START: Load SBERT model | mem=0.84 GB
+2026-04-10 10:38:07,510 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-04-10 10:38:07,657 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:07,671 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/modules.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:07,776 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:07,789 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:07,889 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:07,904 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,005 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,019 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/README.md "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,124 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,137 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/modules.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,239 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,252 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,356 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-10 10:38:08,458 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,471 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,590 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,604 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,836 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,850 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:08,958 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:08,971 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:09,081 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-mpnet-base-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-10 10:38:09,189 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-mpnet-base-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-10 10:38:09,335 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-10 10:38:09,350 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-04-10 10:38:09,457 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-mpnet-base-v2 "HTTP/1.1 200 OK"
+2026-04-10 10:38:09,801 | INFO | SBERT model: all-mpnet-base-v2, dim=768
+2026-04-10 10:38:09,801 | INFO | ✔ END:   Load SBERT model | 2.29s | mem=0.99 GB
+2026-04-10 10:38:09,801 | INFO | ▶ START: [datafusion] Load data | mem=0.99 GB
+2026-04-10 10:38:09,801 | INFO | Loading from normalized dir: /home/user1/Abhishek_space/LinkRank/k7_dataset/datafusion
+2026-04-10 10:38:12,067 | INFO |   rds_issues:  757 rows
+2026-04-10 10:38:12,067 | INFO |   rds_commits: 2352 rows
+2026-04-10 10:38:12,067 | INFO |   rds_links:   936385 rows
+2026-04-10 10:38:15,442 | INFO |   Joined RDS (lightweight): 936385 rows, 749 issues, 2352 commits, mem=3.60 GB
+2026-04-10 10:38:15,445 | INFO |   pos=2270, neg=934115, ratio=1:411
+2026-04-10 10:38:16,357 | INFO | ✔ END:   [datafusion] Load data | 6.56s | mem=4.64 GB
+2026-04-10 10:38:16,358 | INFO | ▶ START: [datafusion] Precompute metadata | mem=4.64 GB
+2026-04-10 10:38:19,833 | INFO | ✔ END:   [datafusion] Precompute metadata | 3.47s | mem=4.70 GB
+2026-04-10 10:38:19,833 | INFO | ▶ START: [datafusion] Create 5-fold stratified splits | mem=4.70 GB
+2026-04-10 10:38:19,844 | INFO | 5-Fold split: 738 issues across 5 folds
+2026-04-10 10:38:19,845 | INFO |   Fold 1: 150 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 22, 5: 15, 6: 12, 7: 8}
+2026-04-10 10:38:19,846 | INFO |   Fold 2: 148 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 21, 5: 15, 6: 11, 7: 8}
+2026-04-10 10:38:19,847 | INFO |   Fold 3: 148 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 21, 5: 15, 6: 11, 7: 8}
+2026-04-10 10:38:19,848 | INFO |   Fold 4: 147 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 21, 5: 14, 6: 11, 7: 8}
+2026-04-10 10:38:19,848 | INFO |   Fold 5: 145 issues, K-dist: {1: 39, 2: 26, 3: 27, 4: 21, 5: 14, 6: 11, 7: 7}
+2026-04-10 10:38:19,849 | INFO | ✔ END:   [datafusion] Create 5-fold stratified splits | 0.02s | mem=4.70 GB
+2026-04-10 10:38:19,894 | INFO | ▶ START: [Fold1] Build train/test | mem=4.73 GB
+2026-04-10 10:38:23,169 | INFO | Train issues=588, rows=732,888
+2026-04-10 10:38:23,169 | INFO | Test  issues=150, rows=199,667
+2026-04-10 10:38:23,170 | INFO | ✔ END:   [Fold1] Build train/test | 3.28s | mem=7.95 GB
+2026-04-10 10:38:28,720 | INFO | ▶ START: [Fold1] SBERT encode [issue_full] (749 texts) | mem=10.35 GB
+2026-04-10 10:38:35,585 | INFO | ✔ END:   [Fold1] SBERT encode [issue_full] (749 texts) | 6.87s | mem=10.40 GB
+2026-04-10 10:38:35,585 | INFO | ▶ START: [Fold1] SBERT encode [issue_nl] (749 texts) | mem=10.40 GB
+2026-04-10 10:38:41,930 | INFO | ✔ END:   [Fold1] SBERT encode [issue_nl] (749 texts) | 6.34s | mem=10.40 GB
+2026-04-10 10:38:41,952 | INFO | ▶ START: [Fold1] SBERT encode [issue_title] (749 texts) | mem=9.78 GB
+2026-04-10 10:38:42,501 | INFO | ✔ END:   [Fold1] SBERT encode [issue_title] (749 texts) | 0.55s | mem=9.78 GB
+2026-04-10 10:38:42,502 | INFO | ▶ START: [Fold1] SBERT encode [commit_full] (2352 texts) | mem=9.78 GB
+2026-04-10 10:39:04,988 | INFO | ✔ END:   [Fold1] SBERT encode [commit_full] (2352 texts) | 22.49s | mem=9.78 GB
+2026-04-10 10:39:04,988 | INFO | ▶ START: [Fold1] SBERT encode [commit_msg] (2352 texts) | mem=9.78 GB
+2026-04-10 10:39:07,140 | INFO | ✔ END:   [Fold1] SBERT encode [commit_msg] (2352 texts) | 2.15s | mem=9.78 GB
+2026-04-10 10:39:07,140 | INFO | ▶ START: [Fold1] Build BM25 indices | mem=9.78 GB
+2026-04-10 10:39:17,127 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-10 10:43:40,714 | INFO | ✔ END:   [Fold1] Build BM25 indices | 273.57s | mem=11.88 GB
+2026-04-10 10:43:48,379 | INFO | ▶ START: [Fold1] TF-IDF+SVD [full] (dim=128) | mem=12.13 GB
+2026-04-10 10:44:26,877 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [full] (dim=128) | 38.50s | mem=12.78 GB
+2026-04-10 10:44:26,877 | INFO | ▶ START: [Fold1] TF-IDF+SVD [code] (dim=80) | mem=12.78 GB
+2026-04-10 10:44:56,988 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [code] (dim=80) | 30.11s | mem=13.17 GB
+2026-04-10 10:44:56,988 | INFO | ▶ START: [Fold1] TF-IDF+SVD [nl] (dim=80) | mem=13.17 GB
+2026-04-10 10:44:57,486 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [nl] (dim=80) | 0.50s | mem=13.18 GB
+2026-04-10 10:44:57,486 | INFO | ▶ START: [Fold1] TF-IDF+SVD [title] (dim=64) | mem=13.18 GB
+2026-04-10 10:44:57,721 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [title] (dim=64) | 0.24s | mem=13.18 GB
+2026-04-10 10:44:57,725 | INFO | ▶ START: [Fold1] Transform test SVD | mem=13.18 GB
+2026-04-10 10:45:25,544 | INFO | ✔ END:   [Fold1] Transform test SVD | 27.82s | mem=13.39 GB
+2026-04-10 10:45:25,548 | INFO | ▶ START: [Fold1] Build features: TRAIN | mem=13.39 GB
+2026-04-10 10:46:52,936 | INFO | ✔ END:   [Fold1] Build features: TRAIN | 87.39s | mem=14.82 GB
+2026-04-10 10:46:52,936 | INFO | ▶ START: [Fold1] Build features: TEST | mem=14.82 GB
+2026-04-10 10:47:16,169 | INFO | ✔ END:   [Fold1] Build features: TEST | 23.23s | mem=14.83 GB
+2026-04-10 10:47:16,170 | INFO | ▶ START: [Fold1] Prepare rank data | mem=14.83 GB
+2026-04-10 10:47:16,390 | INFO | Train groups=471, Dev=117, Test=150
+2026-04-10 10:47:16,390 | INFO | ✔ END:   [Fold1] Prepare rank data | 0.22s | mem=14.86 GB
+2026-04-10 10:47:16,390 | INFO | ▶ START: [Fold1] Optuna hyperparameter tuning | mem=14.86 GB
+2026-04-10 10:50:37,933 | INFO | Optuna best trial: 1, NDCG@1=0.8889
+2026-04-10 10:50:37,933 | INFO | Best params: {
+  "learning_rate": 0.05557494721547488,
+  "num_leaves": 17,
+  "min_data_in_leaf": 98,
+  "max_depth": 9,
+  "feature_fraction": 0.6061695553391381,
+  "bagging_fraction": 0.5909124836035503,
+  "lambda_l1": 0.00541524411940254,
+  "lambda_l2": 0.016480446427978974,
+  "min_gain_to_split": 0.0037520558551242854
+}
+2026-04-10 10:50:37,938 | INFO | ✔ END:   [Fold1] Optuna hyperparameter tuning | 201.55s | mem=14.90 GB
+2026-04-10 10:50:37,938 | INFO | ▶ START: [Fold1] Train LambdaMART (tuned) | mem=14.90 GB
+2026-04-10 10:50:53,040 | INFO | Best iteration: 73
+2026-04-10 10:50:53,041 | INFO | Feature importance (gain):
+2026-04-10 10:50:53,041 | INFO |   sbert_full: 28513.96
+2026-04-10 10:50:53,041 | INFO |   sbert_title: 8119.15
+2026-04-10 10:50:53,041 | INFO |   feat_time: 7560.58
+2026-04-10 10:50:53,041 | INFO |   feat_time_dir: 6339.39
+2026-04-10 10:50:53,041 | INFO |   svd_full: 6233.10
+2026-04-10 10:50:53,041 | INFO |   bm25_title: 2671.16
+2026-04-10 10:50:53,041 | INFO |   bm25_nl: 1066.85
+2026-04-10 10:50:53,041 | INFO |   feat_diff_size: 731.30
+2026-04-10 10:50:53,041 | INFO |   svd_code: 587.92
+2026-04-10 10:50:53,041 | INFO |   sbert_nl: 568.22
+2026-04-10 10:50:53,041 | INFO |   svd_nl: 510.86
+2026-04-10 10:50:53,041 | INFO |   feat_desc_len: 471.62
+2026-04-10 10:50:53,041 | INFO |   bm25_code: 464.19
+2026-04-10 10:50:53,041 | INFO |   feat_file_bn_jaccard: 441.35
+2026-04-10 10:50:53,041 | INFO |   feat_nfiles: 434.94
+2026-04-10 10:50:53,041 | INFO |   bm25_full: 269.01
+2026-04-10 10:50:53,041 | INFO |   svd_title: 230.64
+2026-04-10 10:50:53,042 | INFO | ✔ END:   [Fold1] Train LambdaMART (tuned) | 15.10s | mem=14.90 GB
+2026-04-10 10:50:53,042 | INFO | ▶ START: [Fold1] Evaluate Known-K (iterative) | mem=14.90 GB
+2026-04-10 10:51:17,746 | INFO | ✔ END:   [Fold1] Evaluate Known-K (iterative) | 24.70s | mem=14.91 GB
+2026-04-10 10:51:17,746 | INFO | ▶ START: [Fold1] No-K: tune + evaluate | mem=14.91 GB
+2026-04-10 10:51:21,932 | INFO | Best ABS-mm: tau=0.78 (dev F1=0.5898)
+2026-04-10 10:51:21,933 | INFO | Best REL: gamma=0.50 (dev F1=0.5961)
+2026-04-10 10:54:47,303 | INFO | ✔ END:   [Fold1] No-K: tune + evaluate | 209.56s | mem=14.94 GB
+2026-04-10 10:54:47,305 | INFO | 
+============================================================
+  RESULTS: Fold1
+============================================================
+2026-04-10 10:54:47,309 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      66.55   66.55 66.55
+No-K (ABS-mm)      64.25   71.32 59.75
+   No-K (REL)      34.16   78.92 36.65
+2026-04-10 10:54:48,553 | INFO | Fold 1 completed in 988.7s (16.5 min)
+2026-04-10 10:54:48,639 | INFO | ▶ START: [Fold2] Build train/test | mem=9.51 GB
+2026-04-10 10:54:53,819 | INFO | Train issues=590, rows=746,537
+2026-04-10 10:54:53,819 | INFO | Test  issues=148, rows=186,018
+2026-04-10 10:54:53,819 | INFO | ✔ END:   [Fold2] Build train/test | 5.18s | mem=12.66 GB
+2026-04-10 10:54:59,844 | INFO | ▶ START: [Fold2] SBERT encode [issue_full] (749 texts) | mem=12.77 GB
+2026-04-10 10:55:06,056 | INFO | ✔ END:   [Fold2] SBERT encode [issue_full] (749 texts) | 6.21s | mem=12.77 GB
+2026-04-10 10:55:06,057 | INFO | ▶ START: [Fold2] SBERT encode [issue_nl] (749 texts) | mem=12.77 GB
+2026-04-10 10:55:12,002 | INFO | ✔ END:   [Fold2] SBERT encode [issue_nl] (749 texts) | 5.94s | mem=12.77 GB
+2026-04-10 10:55:12,002 | INFO | ▶ START: [Fold2] SBERT encode [issue_title] (749 texts) | mem=12.77 GB
+2026-04-10 10:55:12,542 | INFO | ✔ END:   [Fold2] SBERT encode [issue_title] (749 texts) | 0.54s | mem=12.77 GB
+2026-04-10 10:55:12,543 | INFO | ▶ START: [Fold2] SBERT encode [commit_full] (2352 texts) | mem=12.77 GB
+2026-04-10 10:55:34,950 | INFO | ✔ END:   [Fold2] SBERT encode [commit_full] (2352 texts) | 22.41s | mem=12.77 GB
+2026-04-10 10:55:34,951 | INFO | ▶ START: [Fold2] SBERT encode [commit_msg] (2352 texts) | mem=12.77 GB
+2026-04-10 10:55:37,042 | INFO | ✔ END:   [Fold2] SBERT encode [commit_msg] (2352 texts) | 2.09s | mem=12.77 GB
+2026-04-10 10:55:37,042 | INFO | ▶ START: [Fold2] Build BM25 indices | mem=12.77 GB
+2026-04-10 10:55:47,034 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-10 11:01:14,159 | INFO | ✔ END:   [Fold2] Build BM25 indices | 337.12s | mem=13.54 GB
+2026-04-10 11:01:22,740 | INFO | ▶ START: [Fold2] TF-IDF+SVD [full] (dim=128) | mem=13.75 GB
+2026-04-10 11:02:00,204 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [full] (dim=128) | 37.46s | mem=13.78 GB
+2026-04-10 11:02:00,205 | INFO | ▶ START: [Fold2] TF-IDF+SVD [code] (dim=80) | mem=13.78 GB
+2026-04-10 11:02:28,815 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [code] (dim=80) | 28.61s | mem=13.80 GB
+2026-04-10 11:02:28,816 | INFO | ▶ START: [Fold2] TF-IDF+SVD [nl] (dim=80) | mem=13.80 GB
+2026-04-10 11:02:29,259 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [nl] (dim=80) | 0.44s | mem=13.80 GB
+2026-04-10 11:02:29,259 | INFO | ▶ START: [Fold2] TF-IDF+SVD [title] (dim=64) | mem=13.80 GB
+2026-04-10 11:02:29,500 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [title] (dim=64) | 0.24s | mem=13.80 GB
+2026-04-10 11:02:29,501 | INFO | ▶ START: [Fold2] Transform test SVD | mem=13.80 GB
+2026-04-10 11:02:56,937 | INFO | ✔ END:   [Fold2] Transform test SVD | 27.44s | mem=14.01 GB
+2026-04-10 11:02:56,941 | INFO | ▶ START: [Fold2] Build features: TRAIN | mem=14.01 GB
+2026-04-10 11:04:25,376 | INFO | ✔ END:   [Fold2] Build features: TRAIN | 88.43s | mem=15.00 GB
+2026-04-10 11:04:25,376 | INFO | ▶ START: [Fold2] Build features: TEST | mem=15.00 GB
+2026-04-10 11:04:46,925 | INFO | ✔ END:   [Fold2] Build features: TEST | 21.55s | mem=14.05 GB
+2026-04-10 11:04:46,925 | INFO | ▶ START: [Fold2] Prepare rank data | mem=14.05 GB
+2026-04-10 11:04:47,170 | INFO | Train groups=472, Dev=118, Test=148
+2026-04-10 11:04:47,170 | INFO | ✔ END:   [Fold2] Prepare rank data | 0.24s | mem=14.05 GB
+2026-04-10 11:04:47,170 | INFO | ▶ START: [Fold2] Optuna hyperparameter tuning | mem=14.05 GB
+2026-04-10 11:07:56,121 | INFO | Optuna best trial: 31, NDCG@1=0.9068
+2026-04-10 11:07:56,121 | INFO | Best params: {
+  "learning_rate": 0.032110303326066444,
+  "num_leaves": 20,
+  "min_data_in_leaf": 93,
+  "max_depth": 7,
+  "feature_fraction": 0.5278001647600103,
+  "bagging_fraction": 0.8128851149525338,
+  "lambda_l1": 0.0010472099408717764,
+  "lambda_l2": 0.019065439599413016,
+  "min_gain_to_split": 0.06321112820187583
+}
+2026-04-10 11:07:56,127 | INFO | ✔ END:   [Fold2] Optuna hyperparameter tuning | 188.96s | mem=14.05 GB
+2026-04-10 11:07:56,127 | INFO | ▶ START: [Fold2] Train LambdaMART (tuned) | mem=14.05 GB
+2026-04-10 11:08:12,837 | INFO | Best iteration: 96
+2026-04-10 11:08:12,837 | INFO | Feature importance (gain):
+2026-04-10 11:08:12,837 | INFO |   sbert_full: 65241.62
+2026-04-10 11:08:12,837 | INFO |   sbert_title: 21122.23
+2026-04-10 11:08:12,837 | INFO |   feat_time_dir: 18967.43
+2026-04-10 11:08:12,837 | INFO |   feat_time: 12722.08
+2026-04-10 11:08:12,837 | INFO |   svd_full: 12464.39
+2026-04-10 11:08:12,837 | INFO |   bm25_title: 7213.42
+2026-04-10 11:08:12,837 | INFO |   bm25_nl: 2259.90
+2026-04-10 11:08:12,837 | INFO |   feat_file_bn_jaccard: 1826.66
+2026-04-10 11:08:12,837 | INFO |   feat_diff_size: 1661.35
+2026-04-10 11:08:12,837 | INFO |   svd_code: 1618.08
+2026-04-10 11:08:12,837 | INFO |   sbert_nl: 1545.11
+2026-04-10 11:08:12,837 | INFO |   feat_desc_len: 1194.63
+2026-04-10 11:08:12,837 | INFO |   bm25_code: 931.20
+2026-04-10 11:08:12,837 | INFO |   feat_nfiles: 801.27
+2026-04-10 11:08:12,837 | INFO |   bm25_full: 646.57
+2026-04-10 11:08:12,837 | INFO |   svd_title: 566.90
+2026-04-10 11:08:12,837 | INFO |   svd_nl: 508.59
+2026-04-10 11:08:12,837 | INFO | ✔ END:   [Fold2] Train LambdaMART (tuned) | 16.71s | mem=14.05 GB
+2026-04-10 11:08:12,838 | INFO | ▶ START: [Fold2] Evaluate Known-K (iterative) | mem=14.05 GB
+2026-04-10 11:08:35,903 | INFO | ✔ END:   [Fold2] Evaluate Known-K (iterative) | 23.07s | mem=14.05 GB
+2026-04-10 11:08:35,904 | INFO | ▶ START: [Fold2] No-K: tune + evaluate | mem=14.05 GB
+2026-04-10 11:08:40,057 | INFO | Best ABS-mm: tau=0.80 (dev F1=0.6179)
+2026-04-10 11:08:40,057 | INFO | Best REL: gamma=0.60 (dev F1=0.6204)
+2026-04-10 11:10:34,987 | INFO | ✔ END:   [Fold2] No-K: tune + evaluate | 119.08s | mem=14.06 GB
+2026-04-10 11:10:34,989 | INFO | 
+============================================================
+  RESULTS: Fold2
+============================================================
+2026-04-10 11:10:34,991 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      65.01   65.01 65.01
+No-K (ABS-mm)      65.12   67.05 56.72
+   No-K (REL)      46.92   74.61 44.81
+2026-04-10 11:10:35,669 | INFO | Fold 2 completed in 947.1s (15.8 min)
+2026-04-10 11:10:35,724 | INFO | ▶ START: [Fold3] Build train/test | mem=9.59 GB
+2026-04-10 11:10:39,026 | INFO | Train issues=590, rows=754,565
+2026-04-10 11:10:39,026 | INFO | Test  issues=148, rows=177,990
+2026-04-10 11:10:39,026 | INFO | ✔ END:   [Fold3] Build train/test | 3.30s | mem=12.72 GB
+2026-04-10 11:10:43,699 | INFO | ▶ START: [Fold3] SBERT encode [issue_full] (749 texts) | mem=12.82 GB
+2026-04-10 11:10:49,959 | INFO | ✔ END:   [Fold3] SBERT encode [issue_full] (749 texts) | 6.26s | mem=12.82 GB
+2026-04-10 11:10:49,960 | INFO | ▶ START: [Fold3] SBERT encode [issue_nl] (749 texts) | mem=12.82 GB
+2026-04-10 11:10:55,963 | INFO | ✔ END:   [Fold3] SBERT encode [issue_nl] (749 texts) | 6.00s | mem=12.82 GB
+2026-04-10 11:10:55,963 | INFO | ▶ START: [Fold3] SBERT encode [issue_title] (749 texts) | mem=12.82 GB
+2026-04-10 11:10:56,488 | INFO | ✔ END:   [Fold3] SBERT encode [issue_title] (749 texts) | 0.52s | mem=12.82 GB
+2026-04-10 11:10:56,488 | INFO | ▶ START: [Fold3] SBERT encode [commit_full] (2352 texts) | mem=12.82 GB
+2026-04-10 11:11:18,968 | INFO | ✔ END:   [Fold3] SBERT encode [commit_full] (2352 texts) | 22.48s | mem=12.82 GB
+2026-04-10 11:11:18,970 | INFO | ▶ START: [Fold3] SBERT encode [commit_msg] (2352 texts) | mem=12.82 GB
+2026-04-10 11:11:21,072 | INFO | ✔ END:   [Fold3] SBERT encode [commit_msg] (2352 texts) | 2.10s | mem=12.82 GB
+2026-04-10 11:11:21,072 | INFO | ▶ START: [Fold3] Build BM25 indices | mem=12.82 GB
+2026-04-10 11:11:30,828 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-10 11:17:23,864 | INFO | ✔ END:   [Fold3] Build BM25 indices | 362.79s | mem=13.56 GB
+2026-04-10 11:17:31,169 | INFO | ▶ START: [Fold3] TF-IDF+SVD [full] (dim=128) | mem=13.77 GB
+2026-04-10 11:18:08,722 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [full] (dim=128) | 37.55s | mem=13.80 GB
+2026-04-10 11:18:08,722 | INFO | ▶ START: [Fold3] TF-IDF+SVD [code] (dim=80) | mem=13.80 GB
+2026-04-10 11:18:37,616 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [code] (dim=80) | 28.89s | mem=13.82 GB
+2026-04-10 11:18:37,617 | INFO | ▶ START: [Fold3] TF-IDF+SVD [nl] (dim=80) | mem=13.82 GB
+2026-04-10 11:18:38,215 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [nl] (dim=80) | 0.60s | mem=13.82 GB
+2026-04-10 11:18:38,215 | INFO | ▶ START: [Fold3] TF-IDF+SVD [title] (dim=64) | mem=13.82 GB
+2026-04-10 11:18:38,383 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [title] (dim=64) | 0.17s | mem=13.82 GB
+2026-04-10 11:18:38,384 | INFO | ▶ START: [Fold3] Transform test SVD | mem=13.82 GB
+2026-04-10 11:19:06,810 | INFO | ✔ END:   [Fold3] Transform test SVD | 28.43s | mem=14.03 GB
+2026-04-10 11:19:06,814 | INFO | ▶ START: [Fold3] Build features: TRAIN | mem=14.03 GB
+2026-04-10 11:20:35,739 | INFO | ✔ END:   [Fold3] Build features: TRAIN | 88.93s | mem=14.26 GB
+2026-04-10 11:20:35,739 | INFO | ▶ START: [Fold3] Build features: TEST | mem=14.26 GB
+2026-04-10 11:20:56,747 | INFO | ✔ END:   [Fold3] Build features: TEST | 21.01s | mem=14.26 GB
+2026-04-10 11:20:56,748 | INFO | ▶ START: [Fold3] Prepare rank data | mem=14.26 GB
+2026-04-10 11:20:56,934 | INFO | Train groups=472, Dev=118, Test=148
+2026-04-10 11:20:56,935 | INFO | ✔ END:   [Fold3] Prepare rank data | 0.19s | mem=14.26 GB
+2026-04-10 11:20:56,935 | INFO | ▶ START: [Fold3] Optuna hyperparameter tuning | mem=14.26 GB
+2026-04-10 11:24:38,181 | INFO | Optuna best trial: 39, NDCG@1=0.8898
+2026-04-10 11:24:38,181 | INFO | Best params: {
+  "learning_rate": 0.06487625126431334,
+  "num_leaves": 89,
+  "min_data_in_leaf": 55,
+  "max_depth": 6,
+  "feature_fraction": 0.5389061183149808,
+  "bagging_fraction": 0.7087148468663019,
+  "lambda_l1": 2.0316080759838804,
+  "lambda_l2": 5.829627342918949,
+  "min_gain_to_split": 0.004647737460660203
+}
+2026-04-10 11:24:38,186 | INFO | ✔ END:   [Fold3] Optuna hyperparameter tuning | 221.25s | mem=14.26 GB
+2026-04-10 11:24:38,186 | INFO | ▶ START: [Fold3] Train LambdaMART (tuned) | mem=14.26 GB
+2026-04-10 11:24:54,243 | INFO | Best iteration: 76
+2026-04-10 11:24:54,243 | INFO | Feature importance (gain):
+2026-04-10 11:24:54,243 | INFO |   sbert_full: 29404.23
+2026-04-10 11:24:54,243 | INFO |   feat_time_dir: 9397.12
+2026-04-10 11:24:54,243 | INFO |   feat_time: 8467.14
+2026-04-10 11:24:54,243 | INFO |   sbert_title: 6718.83
+2026-04-10 11:24:54,243 | INFO |   svd_full: 5323.21
+2026-04-10 11:24:54,243 | INFO |   bm25_title: 2412.55
+2026-04-10 11:24:54,243 | INFO |   feat_diff_size: 696.84
+2026-04-10 11:24:54,243 | INFO |   sbert_nl: 619.31
+2026-04-10 11:24:54,243 | INFO |   svd_code: 596.36
+2026-04-10 11:24:54,243 | INFO |   bm25_nl: 561.16
+2026-04-10 11:24:54,243 | INFO |   feat_file_bn_jaccard: 548.51
+2026-04-10 11:24:54,243 | INFO |   feat_nfiles: 395.88
+2026-04-10 11:24:54,243 | INFO |   bm25_code: 270.57
+2026-04-10 11:24:54,243 | INFO |   bm25_full: 268.52
+2026-04-10 11:24:54,243 | INFO |   svd_title: 265.16
+2026-04-10 11:24:54,243 | INFO |   svd_nl: 262.85
+2026-04-10 11:24:54,243 | INFO |   feat_desc_len: 262.56
+2026-04-10 11:24:54,243 | INFO | ✔ END:   [Fold3] Train LambdaMART (tuned) | 16.06s | mem=14.26 GB
+2026-04-10 11:24:54,244 | INFO | ▶ START: [Fold3] Evaluate Known-K (iterative) | mem=14.26 GB
+2026-04-10 11:25:16,347 | INFO | ✔ END:   [Fold3] Evaluate Known-K (iterative) | 22.10s | mem=14.26 GB
+2026-04-10 11:25:16,348 | INFO | ▶ START: [Fold3] No-K: tune + evaluate | mem=14.26 GB
+2026-04-10 11:25:20,496 | INFO | Best ABS-mm: tau=0.86 (dev F1=0.5884)
+2026-04-10 11:25:20,496 | INFO | Best REL: gamma=0.64 (dev F1=0.5942)
+2026-04-10 11:27:25,197 | INFO | ✔ END:   [Fold3] No-K: tune + evaluate | 128.85s | mem=14.26 GB
+2026-04-10 11:27:25,199 | INFO | 
+============================================================
+  RESULTS: Fold3
+============================================================
+2026-04-10 11:27:25,201 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      66.02   66.02 66.02
+No-K (ABS-mm)      73.79   58.55 57.82
+   No-K (REL)      52.98   68.71 48.43
+2026-04-10 11:27:25,901 | INFO | Fold 3 completed in 1010.2s (16.8 min)
+2026-04-10 11:27:25,958 | INFO | ▶ START: [Fold4] Build train/test | mem=9.83 GB
+2026-04-10 11:27:28,906 | INFO | Train issues=591, rows=749,921
+2026-04-10 11:27:28,906 | INFO | Test  issues=147, rows=182,634
+2026-04-10 11:27:28,907 | INFO | ✔ END:   [Fold4] Build train/test | 2.95s | mem=12.95 GB
+2026-04-10 11:27:34,163 | INFO | ▶ START: [Fold4] SBERT encode [issue_full] (749 texts) | mem=13.06 GB
+2026-04-10 11:27:40,505 | INFO | ✔ END:   [Fold4] SBERT encode [issue_full] (749 texts) | 6.34s | mem=12.87 GB
+2026-04-10 11:27:40,506 | INFO | ▶ START: [Fold4] SBERT encode [issue_nl] (749 texts) | mem=12.87 GB
+2026-04-10 11:27:46,454 | INFO | ✔ END:   [Fold4] SBERT encode [issue_nl] (749 texts) | 5.95s | mem=12.86 GB
+2026-04-10 11:27:46,455 | INFO | ▶ START: [Fold4] SBERT encode [issue_title] (749 texts) | mem=12.86 GB
+2026-04-10 11:27:46,980 | INFO | ✔ END:   [Fold4] SBERT encode [issue_title] (749 texts) | 0.52s | mem=12.86 GB
+2026-04-10 11:27:46,980 | INFO | ▶ START: [Fold4] SBERT encode [commit_full] (2352 texts) | mem=12.86 GB
+2026-04-10 11:28:09,446 | INFO | ✔ END:   [Fold4] SBERT encode [commit_full] (2352 texts) | 22.47s | mem=12.86 GB
+2026-04-10 11:28:09,447 | INFO | ▶ START: [Fold4] SBERT encode [commit_msg] (2352 texts) | mem=12.86 GB
+2026-04-10 11:28:11,544 | INFO | ✔ END:   [Fold4] SBERT encode [commit_msg] (2352 texts) | 2.10s | mem=12.86 GB
+2026-04-10 11:28:11,544 | INFO | ▶ START: [Fold4] Build BM25 indices | mem=12.86 GB
+2026-04-10 11:28:21,726 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-10 11:32:44,216 | INFO | ✔ END:   [Fold4] Build BM25 indices | 272.67s | mem=13.57 GB
+2026-04-10 11:32:51,425 | INFO | ▶ START: [Fold4] TF-IDF+SVD [full] (dim=128) | mem=13.78 GB
+2026-04-10 11:33:27,864 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [full] (dim=128) | 36.44s | mem=13.80 GB
+2026-04-10 11:33:27,865 | INFO | ▶ START: [Fold4] TF-IDF+SVD [code] (dim=80) | mem=13.80 GB
+2026-04-10 11:33:56,054 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [code] (dim=80) | 28.19s | mem=13.83 GB
+2026-04-10 11:33:56,055 | INFO | ▶ START: [Fold4] TF-IDF+SVD [nl] (dim=80) | mem=13.83 GB
+2026-04-10 11:33:56,463 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [nl] (dim=80) | 0.41s | mem=13.83 GB
+2026-04-10 11:33:56,464 | INFO | ▶ START: [Fold4] TF-IDF+SVD [title] (dim=64) | mem=13.83 GB
+2026-04-10 11:33:56,620 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [title] (dim=64) | 0.16s | mem=13.83 GB
+2026-04-10 11:33:56,621 | INFO | ▶ START: [Fold4] Transform test SVD | mem=13.83 GB
+2026-04-10 11:34:24,360 | INFO | ✔ END:   [Fold4] Transform test SVD | 27.74s | mem=14.03 GB
+2026-04-10 11:34:24,364 | INFO | ▶ START: [Fold4] Build features: TRAIN | mem=14.03 GB
+2026-04-10 11:35:51,894 | INFO | ✔ END:   [Fold4] Build features: TRAIN | 87.53s | mem=14.56 GB
+2026-04-10 11:35:51,894 | INFO | ▶ START: [Fold4] Build features: TEST | mem=14.56 GB
+2026-04-10 11:36:13,291 | INFO | ✔ END:   [Fold4] Build features: TEST | 21.40s | mem=14.07 GB
+2026-04-10 11:36:13,291 | INFO | ▶ START: [Fold4] Prepare rank data | mem=14.07 GB
+2026-04-10 11:36:13,503 | INFO | Train groups=473, Dev=118, Test=147
+2026-04-10 11:36:13,504 | INFO | ✔ END:   [Fold4] Prepare rank data | 0.21s | mem=14.07 GB
+2026-04-10 11:36:13,504 | INFO | ▶ START: [Fold4] Optuna hyperparameter tuning | mem=14.07 GB
+2026-04-10 11:39:24,637 | INFO | Optuna best trial: 28, NDCG@1=0.8390
+2026-04-10 11:39:24,637 | INFO | Best params: {
+  "learning_rate": 0.09685066104437928,
+  "num_leaves": 42,
+  "min_data_in_leaf": 27,
+  "max_depth": 3,
+  "feature_fraction": 0.6324090428542883,
+  "bagging_fraction": 0.7910873161693434,
+  "lambda_l1": 0.059212267336521046,
+  "lambda_l2": 0.07615321113208409,
+  "min_gain_to_split": 0.00021283587025711602
+}
+2026-04-10 11:39:24,642 | INFO | ✔ END:   [Fold4] Optuna hyperparameter tuning | 191.14s | mem=14.07 GB
+2026-04-10 11:39:24,642 | INFO | ▶ START: [Fold4] Train LambdaMART (tuned) | mem=14.07 GB
+2026-04-10 11:39:38,089 | INFO | Best iteration: 59
+2026-04-10 11:39:38,090 | INFO | Feature importance (gain):
+2026-04-10 11:39:38,090 | INFO |   sbert_full: 22703.93
+2026-04-10 11:39:38,090 | INFO |   sbert_title: 7150.77
+2026-04-10 11:39:38,090 | INFO |   feat_time: 5896.54
+2026-04-10 11:39:38,090 | INFO |   feat_time_dir: 4082.68
+2026-04-10 11:39:38,090 | INFO |   svd_full: 3763.00
+2026-04-10 11:39:38,090 | INFO |   bm25_title: 2324.84
+2026-04-10 11:39:38,090 | INFO |   bm25_nl: 611.43
+2026-04-10 11:39:38,090 | INFO |   feat_file_bn_jaccard: 378.63
+2026-04-10 11:39:38,090 | INFO |   feat_nfiles: 246.48
+2026-04-10 11:39:38,090 | INFO |   feat_diff_size: 203.76
+2026-04-10 11:39:38,090 | INFO |   sbert_nl: 142.55
+2026-04-10 11:39:38,090 | INFO |   svd_code: 140.69
+2026-04-10 11:39:38,090 | INFO |   bm25_code: 113.46
+2026-04-10 11:39:38,090 | INFO |   svd_nl: 104.77
+2026-04-10 11:39:38,090 | INFO |   bm25_full: 44.72
+2026-04-10 11:39:38,090 | INFO |   svd_title: 26.70
+2026-04-10 11:39:38,090 | INFO |   feat_desc_len: 14.35
+2026-04-10 11:39:38,090 | INFO | ✔ END:   [Fold4] Train LambdaMART (tuned) | 13.45s | mem=14.07 GB
+2026-04-10 11:39:38,091 | INFO | ▶ START: [Fold4] Evaluate Known-K (iterative) | mem=14.07 GB
+2026-04-10 11:40:01,759 | INFO | ✔ END:   [Fold4] Evaluate Known-K (iterative) | 23.67s | mem=14.07 GB
+2026-04-10 11:40:01,759 | INFO | ▶ START: [Fold4] No-K: tune + evaluate | mem=14.07 GB
+2026-04-10 11:40:05,790 | INFO | Best ABS-mm: tau=0.82 (dev F1=0.5640)
+2026-04-10 11:40:05,791 | INFO | Best REL: gamma=0.76 (dev F1=0.5648)
+2026-04-10 11:41:29,404 | INFO | ✔ END:   [Fold4] No-K: tune + evaluate | 87.64s | mem=14.07 GB
+2026-04-10 11:41:29,406 | INFO | 
+============================================================
+  RESULTS: Fold4
+============================================================
+2026-04-10 11:41:29,408 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      65.22   65.22 65.22
+No-K (ABS-mm)      72.80   64.23 59.96
+   No-K (REL)      68.88   65.58 55.64
+2026-04-10 11:41:30,098 | INFO | Fold 4 completed in 844.2s (14.1 min)
+2026-04-10 11:41:30,152 | INFO | ▶ START: [Fold5] Build train/test | mem=9.66 GB
+2026-04-10 11:41:34,370 | INFO | Train issues=593, rows=746,309
+2026-04-10 11:41:34,370 | INFO | Test  issues=145, rows=186,246
+2026-04-10 11:41:34,370 | INFO | ✔ END:   [Fold5] Build train/test | 4.22s | mem=12.79 GB
+2026-04-10 11:41:39,071 | INFO | ▶ START: [Fold5] SBERT encode [issue_full] (749 texts) | mem=12.89 GB
+2026-04-10 11:41:45,317 | INFO | ✔ END:   [Fold5] SBERT encode [issue_full] (749 texts) | 6.25s | mem=12.89 GB
+2026-04-10 11:41:45,317 | INFO | ▶ START: [Fold5] SBERT encode [issue_nl] (749 texts) | mem=12.89 GB
+2026-04-10 11:41:51,278 | INFO | ✔ END:   [Fold5] SBERT encode [issue_nl] (749 texts) | 5.96s | mem=12.89 GB
+2026-04-10 11:41:51,278 | INFO | ▶ START: [Fold5] SBERT encode [issue_title] (749 texts) | mem=12.89 GB
+2026-04-10 11:41:51,800 | INFO | ✔ END:   [Fold5] SBERT encode [issue_title] (749 texts) | 0.52s | mem=12.89 GB
+2026-04-10 11:41:51,800 | INFO | ▶ START: [Fold5] SBERT encode [commit_full] (2352 texts) | mem=12.89 GB
+2026-04-10 11:42:14,184 | INFO | ✔ END:   [Fold5] SBERT encode [commit_full] (2352 texts) | 22.38s | mem=12.89 GB
+2026-04-10 11:42:14,185 | INFO | ▶ START: [Fold5] SBERT encode [commit_msg] (2352 texts) | mem=12.89 GB
+2026-04-10 11:42:16,590 | INFO | ✔ END:   [Fold5] SBERT encode [commit_msg] (2352 texts) | 2.41s | mem=12.87 GB
+2026-04-10 11:42:16,590 | INFO | ▶ START: [Fold5] Build BM25 indices | mem=12.87 GB
+2026-04-10 11:42:26,925 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-10 11:46:48,982 | INFO | ✔ END:   [Fold5] Build BM25 indices | 272.39s | mem=13.56 GB
+2026-04-10 11:46:57,138 | INFO | ▶ START: [Fold5] TF-IDF+SVD [full] (dim=128) | mem=13.77 GB
+2026-04-10 11:47:33,769 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [full] (dim=128) | 36.63s | mem=13.80 GB
+2026-04-10 11:47:33,769 | INFO | ▶ START: [Fold5] TF-IDF+SVD [code] (dim=80) | mem=13.80 GB
+2026-04-10 11:48:02,078 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [code] (dim=80) | 28.31s | mem=13.82 GB
+2026-04-10 11:48:02,079 | INFO | ▶ START: [Fold5] TF-IDF+SVD [nl] (dim=80) | mem=13.82 GB
+2026-04-10 11:48:02,497 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [nl] (dim=80) | 0.42s | mem=13.82 GB
+2026-04-10 11:48:02,497 | INFO | ▶ START: [Fold5] TF-IDF+SVD [title] (dim=64) | mem=13.82 GB
+2026-04-10 11:48:02,663 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [title] (dim=64) | 0.17s | mem=13.82 GB
+2026-04-10 11:48:02,664 | INFO | ▶ START: [Fold5] Transform test SVD | mem=13.82 GB
+2026-04-10 11:48:29,409 | INFO | ✔ END:   [Fold5] Transform test SVD | 26.75s | mem=14.03 GB
+2026-04-10 11:48:29,413 | INFO | ▶ START: [Fold5] Build features: TRAIN | mem=14.03 GB
+2026-04-10 11:49:57,732 | INFO | ✔ END:   [Fold5] Build features: TRAIN | 88.32s | mem=15.16 GB
+2026-04-10 11:49:57,732 | INFO | ▶ START: [Fold5] Build features: TEST | mem=15.16 GB
+2026-04-10 11:50:19,201 | INFO | ✔ END:   [Fold5] Build features: TEST | 21.47s | mem=14.07 GB
+2026-04-10 11:50:19,201 | INFO | ▶ START: [Fold5] Prepare rank data | mem=14.07 GB
+2026-04-10 11:50:19,394 | INFO | Train groups=475, Dev=118, Test=145
+2026-04-10 11:50:19,394 | INFO | ✔ END:   [Fold5] Prepare rank data | 0.19s | mem=14.07 GB
+2026-04-10 11:50:19,395 | INFO | ▶ START: [Fold5] Optuna hyperparameter tuning | mem=14.07 GB
+2026-04-10 11:54:23,713 | INFO | Optuna best trial: 11, NDCG@1=0.8814
+2026-04-10 11:54:23,714 | INFO | Best params: {
+  "learning_rate": 0.09511897882019257,
+  "num_leaves": 70,
+  "min_data_in_leaf": 39,
+  "max_depth": 9,
+  "feature_fraction": 0.7281159932082892,
+  "bagging_fraction": 0.9789880874538219,
+  "lambda_l1": 0.7766709079913451,
+  "lambda_l2": 0.1964101424424174,
+  "min_gain_to_split": 0.0987490035021984
+}
+2026-04-10 11:54:23,719 | INFO | ✔ END:   [Fold5] Optuna hyperparameter tuning | 244.32s | mem=14.07 GB
+2026-04-10 11:54:23,719 | INFO | ▶ START: [Fold5] Train LambdaMART (tuned) | mem=14.07 GB
+2026-04-10 11:54:38,174 | INFO | Best iteration: 54
+2026-04-10 11:54:38,174 | INFO | Feature importance (gain):
+2026-04-10 11:54:38,174 | INFO |   sbert_full: 33797.24
+2026-04-10 11:54:38,174 | INFO |   feat_time: 7647.34
+2026-04-10 11:54:38,174 | INFO |   sbert_title: 5957.19
+2026-04-10 11:54:38,174 | INFO |   feat_time_dir: 5643.49
+2026-04-10 11:54:38,174 | INFO |   svd_full: 5005.67
+2026-04-10 11:54:38,174 | INFO |   bm25_title: 1654.46
+2026-04-10 11:54:38,174 | INFO |   feat_diff_size: 1287.87
+2026-04-10 11:54:38,174 | INFO |   svd_code: 1141.95
+2026-04-10 11:54:38,174 | INFO |   bm25_nl: 752.19
+2026-04-10 11:54:38,174 | INFO |   feat_nfiles: 618.52
+2026-04-10 11:54:38,174 | INFO |   feat_file_bn_jaccard: 569.46
+2026-04-10 11:54:38,174 | INFO |   bm25_code: 526.11
+2026-04-10 11:54:38,174 | INFO |   svd_nl: 506.96
+2026-04-10 11:54:38,174 | INFO |   bm25_full: 495.76
+2026-04-10 11:54:38,174 | INFO |   svd_title: 491.10
+2026-04-10 11:54:38,174 | INFO |   sbert_nl: 398.95
+2026-04-10 11:54:38,174 | INFO |   feat_desc_len: 322.30
+2026-04-10 11:54:38,174 | INFO | ✔ END:   [Fold5] Train LambdaMART (tuned) | 14.46s | mem=14.07 GB
+2026-04-10 11:54:38,175 | INFO | ▶ START: [Fold5] Evaluate Known-K (iterative) | mem=14.07 GB
+2026-04-10 11:55:01,189 | INFO | ✔ END:   [Fold5] Evaluate Known-K (iterative) | 23.01s | mem=14.07 GB
+2026-04-10 11:55:01,190 | INFO | ▶ START: [Fold5] No-K: tune + evaluate | mem=14.07 GB
+2026-04-10 11:55:05,316 | INFO | Best ABS-mm: tau=0.80 (dev F1=0.6223)
+2026-04-10 11:55:05,316 | INFO | Best REL: gamma=0.52 (dev F1=0.6143)
+2026-04-10 11:58:48,005 | INFO | ✔ END:   [Fold5] No-K: tune + evaluate | 226.82s | mem=14.09 GB
+2026-04-10 11:58:48,007 | INFO | 
+============================================================
+  RESULTS: Fold5
+============================================================
+2026-04-10 11:58:48,009 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      68.78   68.78 68.78
+No-K (ABS-mm)      68.62   69.60 62.89
+   No-K (REL)      37.74   80.78 40.17
+2026-04-10 11:58:48,723 | INFO | Fold 5 completed in 1038.6s (17.3 min)
+2026-04-10 11:58:48,728 | INFO | Total 5-fold CV time: 4841.2s (80.7 min)
+2026-04-13 12:08:20,592 | INFO | Device: cuda, CUDA: True
+2026-04-13 12:08:20,593 | INFO | ▶ START: Load SBERT model | mem=0.84 GB
+2026-04-13 12:08:20,595 | INFO | Load pretrained SentenceTransformer: all-mpnet-base-v2
+2026-04-13 12:08:20,755 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:20,769 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/modules.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:20,878 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:20,892 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:20,997 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:21,011 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:21,115 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:21,129 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/README.md "HTTP/1.1 200 OK"
+2026-04-13 12:08:21,230 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:21,244 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/modules.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:21,358 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:21,371 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:21,497 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-04-13 12:08:21,622 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:21,636 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:21,792 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:21,807 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:22,035 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:22,048 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/config.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:22,156 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:22,170 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:22,280 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-mpnet-base-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-13 12:08:22,413 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-mpnet-base-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-13 12:08:22,565 | INFO | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-mpnet-base-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-13 12:08:22,579 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-mpnet-base-v2/e8c3b32edf5434bc2275fc9bab85f82640a19130/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-04-13 12:08:22,689 | INFO | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-mpnet-base-v2 "HTTP/1.1 200 OK"
+2026-04-13 12:08:23,051 | INFO | SBERT model: all-mpnet-base-v2, dim=768
+2026-04-13 12:08:23,051 | INFO | ✔ END:   Load SBERT model | 2.46s | mem=0.99 GB
+2026-04-13 12:08:23,051 | INFO | ▶ START: [datafusion] Load data | mem=0.99 GB
+2026-04-13 12:08:23,052 | INFO | Loading from normalized dir: /home/user1/Abhishek_space/LinkRank/k7_dataset/datafusion
+2026-04-13 12:08:24,573 | INFO |   rds_issues:  757 rows
+2026-04-13 12:08:24,573 | INFO |   rds_commits: 2352 rows
+2026-04-13 12:08:24,573 | INFO |   rds_links:   936385 rows
+2026-04-13 12:08:27,984 | INFO |   Joined RDS (lightweight): 936385 rows, 749 issues, 2352 commits, mem=3.60 GB
+2026-04-13 12:08:27,988 | INFO |   pos=2270, neg=934115, ratio=1:411
+2026-04-13 12:08:28,910 | INFO | ✔ END:   [datafusion] Load data | 5.86s | mem=4.65 GB
+2026-04-13 12:08:28,911 | INFO | ▶ START: [datafusion] Precompute metadata | mem=4.65 GB
+2026-04-13 12:08:32,363 | INFO | ✔ END:   [datafusion] Precompute metadata | 3.45s | mem=4.75 GB
+2026-04-13 12:08:32,363 | INFO | ▶ START: [datafusion] Create 5-fold stratified splits | mem=4.75 GB
+2026-04-13 12:08:32,375 | INFO | 5-Fold split: 738 issues across 5 folds
+2026-04-13 12:08:32,376 | INFO |   Fold 1: 150 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 22, 5: 15, 6: 12, 7: 8}
+2026-04-13 12:08:32,377 | INFO |   Fold 2: 148 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 21, 5: 15, 6: 11, 7: 8}
+2026-04-13 12:08:32,378 | INFO |   Fold 3: 148 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 21, 5: 15, 6: 11, 7: 8}
+2026-04-13 12:08:32,379 | INFO |   Fold 4: 147 issues, K-dist: {1: 39, 2: 26, 3: 28, 4: 21, 5: 14, 6: 11, 7: 8}
+2026-04-13 12:08:32,379 | INFO |   Fold 5: 145 issues, K-dist: {1: 39, 2: 26, 3: 27, 4: 21, 5: 14, 6: 11, 7: 7}
+2026-04-13 12:08:32,380 | INFO | ✔ END:   [datafusion] Create 5-fold stratified splits | 0.02s | mem=4.75 GB
+2026-04-13 12:08:32,422 | INFO | ▶ START: [Fold1] Build train/test | mem=4.75 GB
+2026-04-13 12:08:35,678 | INFO | Train issues=588, rows=732,888
+2026-04-13 12:08:35,678 | INFO | Test  issues=150, rows=199,667
+2026-04-13 12:08:35,679 | INFO | ✔ END:   [Fold1] Build train/test | 3.26s | mem=7.95 GB
+2026-04-13 12:08:42,470 | INFO | ▶ START: [Fold1] SBERT encode [issue_full] (749 texts) | mem=10.36 GB
+2026-04-13 12:08:49,019 | INFO | ✔ END:   [Fold1] SBERT encode [issue_full] (749 texts) | 6.55s | mem=10.41 GB
+2026-04-13 12:08:49,020 | INFO | ▶ START: [Fold1] SBERT encode [issue_nl] (749 texts) | mem=10.41 GB
+2026-04-13 12:08:55,202 | INFO | ✔ END:   [Fold1] SBERT encode [issue_nl] (749 texts) | 6.18s | mem=10.41 GB
+2026-04-13 12:08:55,228 | INFO | ▶ START: [Fold1] SBERT encode [issue_title] (749 texts) | mem=9.79 GB
+2026-04-13 12:08:55,787 | INFO | ✔ END:   [Fold1] SBERT encode [issue_title] (749 texts) | 0.56s | mem=9.79 GB
+2026-04-13 12:08:55,787 | INFO | ▶ START: [Fold1] SBERT encode [commit_full] (2352 texts) | mem=9.79 GB
+2026-04-13 12:09:18,191 | INFO | ✔ END:   [Fold1] SBERT encode [commit_full] (2352 texts) | 22.40s | mem=9.79 GB
+2026-04-13 12:09:18,192 | INFO | ▶ START: [Fold1] SBERT encode [commit_msg] (2352 texts) | mem=9.79 GB
+2026-04-13 12:09:20,328 | INFO | ✔ END:   [Fold1] SBERT encode [commit_msg] (2352 texts) | 2.14s | mem=9.79 GB
+2026-04-13 12:09:20,328 | INFO | ▶ START: [Fold1] Build BM25 indices | mem=9.79 GB
+2026-04-13 12:09:30,200 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-13 12:13:56,406 | INFO | ✔ END:   [Fold1] Build BM25 indices | 276.08s | mem=11.92 GB
+2026-04-13 12:14:04,050 | INFO | ▶ START: [Fold1] TF-IDF+SVD [full] (dim=128) | mem=12.16 GB
+2026-04-13 12:14:42,796 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [full] (dim=128) | 38.75s | mem=12.81 GB
+2026-04-13 12:14:42,797 | INFO | ▶ START: [Fold1] TF-IDF+SVD [code] (dim=80) | mem=12.81 GB
+2026-04-13 12:15:13,091 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [code] (dim=80) | 30.29s | mem=13.20 GB
+2026-04-13 12:15:13,092 | INFO | ▶ START: [Fold1] TF-IDF+SVD [nl] (dim=80) | mem=13.20 GB
+2026-04-13 12:15:13,592 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [nl] (dim=80) | 0.50s | mem=13.20 GB
+2026-04-13 12:15:13,592 | INFO | ▶ START: [Fold1] TF-IDF+SVD [title] (dim=64) | mem=13.20 GB
+2026-04-13 12:15:13,793 | INFO | ✔ END:   [Fold1] TF-IDF+SVD [title] (dim=64) | 0.20s | mem=13.20 GB
+2026-04-13 12:15:13,793 | INFO | ▶ START: [Fold1] Transform test SVD | mem=13.20 GB
+2026-04-13 12:15:40,927 | INFO | ✔ END:   [Fold1] Transform test SVD | 27.13s | mem=13.41 GB
+2026-04-13 12:15:40,931 | INFO | ▶ START: [Fold1] Build features: TRAIN | mem=13.41 GB
+2026-04-13 12:17:07,326 | INFO | ✔ END:   [Fold1] Build features: TRAIN | 86.40s | mem=14.83 GB
+2026-04-13 12:17:07,326 | INFO | ▶ START: [Fold1] Build features: TEST | mem=14.83 GB
+2026-04-13 12:17:30,342 | INFO | ✔ END:   [Fold1] Build features: TEST | 23.02s | mem=14.83 GB
+2026-04-13 12:17:30,342 | INFO | ▶ START: [Fold1] Prepare rank data | mem=14.83 GB
+2026-04-13 12:17:30,561 | INFO | Train groups=471, Dev=117, Test=150
+2026-04-13 12:17:30,561 | INFO | ✔ END:   [Fold1] Prepare rank data | 0.22s | mem=14.87 GB
+2026-04-13 12:17:30,561 | INFO | ▶ START: [Fold1] Optuna hyperparameter tuning | mem=14.87 GB
+2026-04-13 12:21:00,487 | INFO | Optuna best trial: 1, NDCG@1=0.8889
+2026-04-13 12:21:00,488 | INFO | Best params: {
+  "learning_rate": 0.05557494721547488,
+  "num_leaves": 17,
+  "min_data_in_leaf": 98,
+  "max_depth": 9,
+  "feature_fraction": 0.6061695553391381,
+  "bagging_fraction": 0.5909124836035503,
+  "lambda_l1": 0.00541524411940254,
+  "lambda_l2": 0.016480446427978974,
+  "min_gain_to_split": 0.0037520558551242854
+}
+2026-04-13 12:21:00,493 | INFO | ✔ END:   [Fold1] Optuna hyperparameter tuning | 209.93s | mem=14.90 GB
+2026-04-13 12:21:00,493 | INFO | ▶ START: [Fold1] Train LambdaMART (tuned) | mem=14.90 GB
+2026-04-13 12:21:15,646 | INFO | Best iteration: 73
+2026-04-13 12:21:15,647 | INFO | Feature importance (gain):
+2026-04-13 12:21:15,647 | INFO |   sbert_full: 28513.96
+2026-04-13 12:21:15,647 | INFO |   sbert_title: 8119.15
+2026-04-13 12:21:15,647 | INFO |   feat_time: 7560.58
+2026-04-13 12:21:15,647 | INFO |   feat_time_dir: 6339.39
+2026-04-13 12:21:15,647 | INFO |   svd_full: 6233.10
+2026-04-13 12:21:15,647 | INFO |   bm25_title: 2671.16
+2026-04-13 12:21:15,647 | INFO |   bm25_nl: 1066.85
+2026-04-13 12:21:15,647 | INFO |   feat_diff_size: 731.30
+2026-04-13 12:21:15,647 | INFO |   svd_code: 587.92
+2026-04-13 12:21:15,647 | INFO |   sbert_nl: 568.22
+2026-04-13 12:21:15,647 | INFO |   svd_nl: 510.86
+2026-04-13 12:21:15,647 | INFO |   feat_desc_len: 471.62
+2026-04-13 12:21:15,647 | INFO |   bm25_code: 464.19
+2026-04-13 12:21:15,647 | INFO |   feat_file_bn_jaccard: 441.35
+2026-04-13 12:21:15,647 | INFO |   feat_nfiles: 434.94
+2026-04-13 12:21:15,647 | INFO |   bm25_full: 269.01
+2026-04-13 12:21:15,647 | INFO |   svd_title: 230.64
+2026-04-13 12:21:15,648 | INFO | ✔ END:   [Fold1] Train LambdaMART (tuned) | 15.15s | mem=14.91 GB
+2026-04-13 12:21:15,648 | INFO | ▶ START: [Fold1] Evaluate Known-K (iterative) | mem=14.91 GB
+2026-04-13 12:21:40,744 | INFO | ✔ END:   [Fold1] Evaluate Known-K (iterative) | 25.10s | mem=14.91 GB
+2026-04-13 12:21:40,745 | INFO | ▶ START: [Fold1] No-K: tune + evaluate | mem=14.91 GB
+2026-04-13 12:21:45,043 | INFO | Best ABS-mm: tau=0.78 (dev F1=0.5898)
+2026-04-13 12:21:45,043 | INFO | Best REL: gamma=0.50 (dev F1=0.5961)
+2026-04-13 12:25:09,718 | INFO | ✔ END:   [Fold1] No-K: tune + evaluate | 208.97s | mem=14.94 GB
+2026-04-13 12:25:09,718 | INFO | ▶ START: [Fold1] Compute MRR, NDCG@K, P@K | mem=14.94 GB
+2026-04-13 12:25:09,886 | INFO |   MRR=89.38  NDCG@K=71.93  P@K=68.09
+2026-04-13 12:25:09,886 | INFO | ✔ END:   [Fold1] Compute MRR, NDCG@K, P@K | 0.17s | mem=14.94 GB
+2026-04-13 12:25:09,888 | INFO | 
+============================================================
+  RESULTS: Fold1
+============================================================
+2026-04-13 12:25:09,892 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      66.55   66.55 66.55
+No-K (ABS-mm)      64.25   71.32 59.75
+   No-K (REL)      34.16   78.92 36.65
+2026-04-13 12:25:11,145 | INFO | Fold 1 completed in 998.8s (16.6 min)
+2026-04-13 12:25:11,250 | INFO | ▶ START: [Fold2] Build train/test | mem=9.51 GB
+2026-04-13 12:25:16,293 | INFO | Train issues=590, rows=746,537
+2026-04-13 12:25:16,293 | INFO | Test  issues=148, rows=186,018
+2026-04-13 12:25:16,293 | INFO | ✔ END:   [Fold2] Build train/test | 5.04s | mem=12.66 GB
+2026-04-13 12:25:23,219 | INFO | ▶ START: [Fold2] SBERT encode [issue_full] (749 texts) | mem=12.77 GB
+2026-04-13 12:25:29,519 | INFO | ✔ END:   [Fold2] SBERT encode [issue_full] (749 texts) | 6.30s | mem=12.77 GB
+2026-04-13 12:25:29,520 | INFO | ▶ START: [Fold2] SBERT encode [issue_nl] (749 texts) | mem=12.77 GB
+2026-04-13 12:25:35,509 | INFO | ✔ END:   [Fold2] SBERT encode [issue_nl] (749 texts) | 5.99s | mem=12.77 GB
+2026-04-13 12:25:35,510 | INFO | ▶ START: [Fold2] SBERT encode [issue_title] (749 texts) | mem=12.77 GB
+2026-04-13 12:25:36,053 | INFO | ✔ END:   [Fold2] SBERT encode [issue_title] (749 texts) | 0.54s | mem=12.77 GB
+2026-04-13 12:25:36,053 | INFO | ▶ START: [Fold2] SBERT encode [commit_full] (2352 texts) | mem=12.77 GB
+2026-04-13 12:25:58,697 | INFO | ✔ END:   [Fold2] SBERT encode [commit_full] (2352 texts) | 22.64s | mem=12.77 GB
+2026-04-13 12:25:58,699 | INFO | ▶ START: [Fold2] SBERT encode [commit_msg] (2352 texts) | mem=12.77 GB
+2026-04-13 12:26:00,828 | INFO | ✔ END:   [Fold2] SBERT encode [commit_msg] (2352 texts) | 2.13s | mem=12.77 GB
+2026-04-13 12:26:00,829 | INFO | ▶ START: [Fold2] Build BM25 indices | mem=12.77 GB
+2026-04-13 12:26:11,248 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-13 12:33:05,979 | INFO | ✔ END:   [Fold2] Build BM25 indices | 425.15s | mem=13.54 GB
+2026-04-13 12:33:15,203 | INFO | ▶ START: [Fold2] TF-IDF+SVD [full] (dim=128) | mem=13.75 GB
+2026-04-13 12:33:53,441 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [full] (dim=128) | 38.24s | mem=13.78 GB
+2026-04-13 12:33:53,442 | INFO | ▶ START: [Fold2] TF-IDF+SVD [code] (dim=80) | mem=13.78 GB
+2026-04-13 12:34:22,495 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [code] (dim=80) | 29.05s | mem=13.80 GB
+2026-04-13 12:34:22,496 | INFO | ▶ START: [Fold2] TF-IDF+SVD [nl] (dim=80) | mem=13.80 GB
+2026-04-13 12:34:22,974 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [nl] (dim=80) | 0.48s | mem=13.80 GB
+2026-04-13 12:34:22,975 | INFO | ▶ START: [Fold2] TF-IDF+SVD [title] (dim=64) | mem=13.80 GB
+2026-04-13 12:34:23,155 | INFO | ✔ END:   [Fold2] TF-IDF+SVD [title] (dim=64) | 0.18s | mem=13.80 GB
+2026-04-13 12:34:23,159 | INFO | ▶ START: [Fold2] Transform test SVD | mem=13.80 GB
+2026-04-13 12:34:50,614 | INFO | ✔ END:   [Fold2] Transform test SVD | 27.45s | mem=14.01 GB
+2026-04-13 12:34:50,618 | INFO | ▶ START: [Fold2] Build features: TRAIN | mem=14.01 GB
+2026-04-13 12:36:20,475 | INFO | ✔ END:   [Fold2] Build features: TRAIN | 89.86s | mem=15.00 GB
+2026-04-13 12:36:20,476 | INFO | ▶ START: [Fold2] Build features: TEST | mem=15.00 GB
+2026-04-13 12:36:42,035 | INFO | ✔ END:   [Fold2] Build features: TEST | 21.56s | mem=14.05 GB
+2026-04-13 12:36:42,035 | INFO | ▶ START: [Fold2] Prepare rank data | mem=14.05 GB
+2026-04-13 12:36:42,255 | INFO | Train groups=472, Dev=118, Test=148
+2026-04-13 12:36:42,255 | INFO | ✔ END:   [Fold2] Prepare rank data | 0.22s | mem=14.05 GB
+2026-04-13 12:36:42,256 | INFO | ▶ START: [Fold2] Optuna hyperparameter tuning | mem=14.05 GB
+2026-04-13 12:39:51,392 | INFO | Optuna best trial: 31, NDCG@1=0.9068
+2026-04-13 12:39:51,393 | INFO | Best params: {
+  "learning_rate": 0.032110303326066444,
+  "num_leaves": 20,
+  "min_data_in_leaf": 93,
+  "max_depth": 7,
+  "feature_fraction": 0.5278001647600103,
+  "bagging_fraction": 0.8128851149525338,
+  "lambda_l1": 0.0010472099408717764,
+  "lambda_l2": 0.019065439599413016,
+  "min_gain_to_split": 0.06321112820187583
+}
+2026-04-13 12:39:51,399 | INFO | ✔ END:   [Fold2] Optuna hyperparameter tuning | 189.14s | mem=14.05 GB
+2026-04-13 12:39:51,399 | INFO | ▶ START: [Fold2] Train LambdaMART (tuned) | mem=14.05 GB
+2026-04-13 12:40:08,810 | INFO | Best iteration: 96
+2026-04-13 12:40:08,810 | INFO | Feature importance (gain):
+2026-04-13 12:40:08,810 | INFO |   sbert_full: 65241.62
+2026-04-13 12:40:08,810 | INFO |   sbert_title: 21122.23
+2026-04-13 12:40:08,810 | INFO |   feat_time_dir: 18967.43
+2026-04-13 12:40:08,810 | INFO |   feat_time: 12722.08
+2026-04-13 12:40:08,810 | INFO |   svd_full: 12464.39
+2026-04-13 12:40:08,810 | INFO |   bm25_title: 7213.42
+2026-04-13 12:40:08,810 | INFO |   bm25_nl: 2259.90
+2026-04-13 12:40:08,810 | INFO |   feat_file_bn_jaccard: 1826.66
+2026-04-13 12:40:08,810 | INFO |   feat_diff_size: 1661.35
+2026-04-13 12:40:08,811 | INFO |   svd_code: 1618.08
+2026-04-13 12:40:08,811 | INFO |   sbert_nl: 1545.11
+2026-04-13 12:40:08,811 | INFO |   feat_desc_len: 1194.63
+2026-04-13 12:40:08,811 | INFO |   bm25_code: 931.20
+2026-04-13 12:40:08,811 | INFO |   feat_nfiles: 801.27
+2026-04-13 12:40:08,811 | INFO |   bm25_full: 646.57
+2026-04-13 12:40:08,811 | INFO |   svd_title: 566.90
+2026-04-13 12:40:08,811 | INFO |   svd_nl: 508.59
+2026-04-13 12:40:08,811 | INFO | ✔ END:   [Fold2] Train LambdaMART (tuned) | 17.41s | mem=14.05 GB
+2026-04-13 12:40:08,811 | INFO | ▶ START: [Fold2] Evaluate Known-K (iterative) | mem=14.05 GB
+2026-04-13 12:40:31,961 | INFO | ✔ END:   [Fold2] Evaluate Known-K (iterative) | 23.15s | mem=14.05 GB
+2026-04-13 12:40:31,961 | INFO | ▶ START: [Fold2] No-K: tune + evaluate | mem=14.05 GB
+2026-04-13 12:40:36,105 | INFO | Best ABS-mm: tau=0.80 (dev F1=0.6179)
+2026-04-13 12:40:36,105 | INFO | Best REL: gamma=0.60 (dev F1=0.6204)
+2026-04-13 12:42:31,128 | INFO | ✔ END:   [Fold2] No-K: tune + evaluate | 119.17s | mem=14.06 GB
+2026-04-13 12:42:31,128 | INFO | ▶ START: [Fold2] Compute MRR, NDCG@K, P@K | mem=14.06 GB
+2026-04-13 12:42:31,285 | INFO |   MRR=89.63  NDCG@K=69.98  P@K=65.56
+2026-04-13 12:42:31,285 | INFO | ✔ END:   [Fold2] Compute MRR, NDCG@K, P@K | 0.16s | mem=14.06 GB
+2026-04-13 12:42:31,287 | INFO | 
+============================================================
+  RESULTS: Fold2
+============================================================
+2026-04-13 12:42:31,289 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      65.01   65.01 65.01
+No-K (ABS-mm)      65.12   67.05 56.72
+   No-K (REL)      46.92   74.61 44.81
+2026-04-13 12:42:31,951 | INFO | Fold 2 completed in 1040.8s (17.3 min)
+2026-04-13 12:42:32,015 | INFO | ▶ START: [Fold3] Build train/test | mem=9.60 GB
+2026-04-13 12:42:35,994 | INFO | Train issues=590, rows=754,565
+2026-04-13 12:42:35,994 | INFO | Test  issues=148, rows=177,990
+2026-04-13 12:42:35,994 | INFO | ✔ END:   [Fold3] Build train/test | 3.98s | mem=12.72 GB
+2026-04-13 12:42:40,677 | INFO | ▶ START: [Fold3] SBERT encode [issue_full] (749 texts) | mem=12.83 GB
+2026-04-13 12:42:46,943 | INFO | ✔ END:   [Fold3] SBERT encode [issue_full] (749 texts) | 6.27s | mem=12.83 GB
+2026-04-13 12:42:46,943 | INFO | ▶ START: [Fold3] SBERT encode [issue_nl] (749 texts) | mem=12.83 GB
+2026-04-13 12:42:52,952 | INFO | ✔ END:   [Fold3] SBERT encode [issue_nl] (749 texts) | 6.01s | mem=12.83 GB
+2026-04-13 12:42:52,952 | INFO | ▶ START: [Fold3] SBERT encode [issue_title] (749 texts) | mem=12.83 GB
+2026-04-13 12:42:53,507 | INFO | ✔ END:   [Fold3] SBERT encode [issue_title] (749 texts) | 0.55s | mem=12.83 GB
+2026-04-13 12:42:53,507 | INFO | ▶ START: [Fold3] SBERT encode [commit_full] (2352 texts) | mem=12.83 GB
+2026-04-13 12:43:16,618 | INFO | ✔ END:   [Fold3] SBERT encode [commit_full] (2352 texts) | 23.11s | mem=12.83 GB
+2026-04-13 12:43:16,619 | INFO | ▶ START: [Fold3] SBERT encode [commit_msg] (2352 texts) | mem=12.83 GB
+2026-04-13 12:43:18,739 | INFO | ✔ END:   [Fold3] SBERT encode [commit_msg] (2352 texts) | 2.12s | mem=12.83 GB
+2026-04-13 12:43:18,740 | INFO | ▶ START: [Fold3] Build BM25 indices | mem=12.83 GB
+2026-04-13 12:43:29,024 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-13 12:50:09,017 | INFO | ✔ END:   [Fold3] Build BM25 indices | 410.28s | mem=13.56 GB
+2026-04-13 12:50:16,228 | INFO | ▶ START: [Fold3] TF-IDF+SVD [full] (dim=128) | mem=13.77 GB
+2026-04-13 12:50:53,511 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [full] (dim=128) | 37.28s | mem=13.80 GB
+2026-04-13 12:50:53,511 | INFO | ▶ START: [Fold3] TF-IDF+SVD [code] (dim=80) | mem=13.80 GB
+2026-04-13 12:51:22,892 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [code] (dim=80) | 29.38s | mem=13.82 GB
+2026-04-13 12:51:22,892 | INFO | ▶ START: [Fold3] TF-IDF+SVD [nl] (dim=80) | mem=13.82 GB
+2026-04-13 12:51:23,558 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [nl] (dim=80) | 0.67s | mem=13.82 GB
+2026-04-13 12:51:23,559 | INFO | ▶ START: [Fold3] TF-IDF+SVD [title] (dim=64) | mem=13.82 GB
+2026-04-13 12:51:23,740 | INFO | ✔ END:   [Fold3] TF-IDF+SVD [title] (dim=64) | 0.18s | mem=13.82 GB
+2026-04-13 12:51:23,740 | INFO | ▶ START: [Fold3] Transform test SVD | mem=13.82 GB
+2026-04-13 12:51:51,565 | INFO | ✔ END:   [Fold3] Transform test SVD | 27.82s | mem=14.03 GB
+2026-04-13 12:51:51,569 | INFO | ▶ START: [Fold3] Build features: TRAIN | mem=14.03 GB
+2026-04-13 12:53:19,872 | INFO | ✔ END:   [Fold3] Build features: TRAIN | 88.30s | mem=14.26 GB
+2026-04-13 12:53:19,872 | INFO | ▶ START: [Fold3] Build features: TEST | mem=14.26 GB
+2026-04-13 12:53:40,553 | INFO | ✔ END:   [Fold3] Build features: TEST | 20.68s | mem=14.26 GB
+2026-04-13 12:53:40,554 | INFO | ▶ START: [Fold3] Prepare rank data | mem=14.26 GB
+2026-04-13 12:53:40,736 | INFO | Train groups=472, Dev=118, Test=148
+2026-04-13 12:53:40,737 | INFO | ✔ END:   [Fold3] Prepare rank data | 0.18s | mem=14.26 GB
+2026-04-13 12:53:40,737 | INFO | ▶ START: [Fold3] Optuna hyperparameter tuning | mem=14.26 GB
+2026-04-13 12:57:09,439 | INFO | Optuna best trial: 47, NDCG@1=0.8898
+2026-04-13 12:57:09,439 | INFO | Best params: {
+  "learning_rate": 0.044437445761106954,
+  "num_leaves": 88,
+  "min_data_in_leaf": 13,
+  "max_depth": 8,
+  "feature_fraction": 0.5690616004538263,
+  "bagging_fraction": 0.7076028306903828,
+  "lambda_l1": 0.7708170818790666,
+  "lambda_l2": 0.00888293819807196,
+  "min_gain_to_split": 0.09306589093712082
+}
+2026-04-13 12:57:09,444 | INFO | ✔ END:   [Fold3] Optuna hyperparameter tuning | 208.71s | mem=14.14 GB
+2026-04-13 12:57:09,444 | INFO | ▶ START: [Fold3] Train LambdaMART (tuned) | mem=14.14 GB
+2026-04-13 12:57:25,139 | INFO | Best iteration: 43
+2026-04-13 12:57:25,139 | INFO | Feature importance (gain):
+2026-04-13 12:57:25,139 | INFO |   sbert_full: 39747.30
+2026-04-13 12:57:25,139 | INFO |   feat_time_dir: 11915.11
+2026-04-13 12:57:25,139 | INFO |   sbert_title: 11051.79
+2026-04-13 12:57:25,139 | INFO |   svd_full: 7471.50
+2026-04-13 12:57:25,139 | INFO |   feat_time: 7406.77
+2026-04-13 12:57:25,139 | INFO |   bm25_title: 2210.71
+2026-04-13 12:57:25,139 | INFO |   feat_diff_size: 1294.39
+2026-04-13 12:57:25,139 | INFO |   svd_code: 1163.64
+2026-04-13 12:57:25,139 | INFO |   sbert_nl: 1113.25
+2026-04-13 12:57:25,139 | INFO |   feat_desc_len: 920.74
+2026-04-13 12:57:25,139 | INFO |   bm25_nl: 816.20
+2026-04-13 12:57:25,139 | INFO |   feat_nfiles: 634.52
+2026-04-13 12:57:25,139 | INFO |   svd_title: 628.53
+2026-04-13 12:57:25,139 | INFO |   svd_nl: 624.75
+2026-04-13 12:57:25,139 | INFO |   feat_file_bn_jaccard: 541.01
+2026-04-13 12:57:25,139 | INFO |   bm25_full: 535.65
+2026-04-13 12:57:25,139 | INFO |   bm25_code: 509.25
+2026-04-13 12:57:25,140 | INFO | ✔ END:   [Fold3] Train LambdaMART (tuned) | 15.70s | mem=14.14 GB
+2026-04-13 12:57:25,140 | INFO | ▶ START: [Fold3] Evaluate Known-K (iterative) | mem=14.14 GB
+2026-04-13 12:57:46,869 | INFO | ✔ END:   [Fold3] Evaluate Known-K (iterative) | 21.73s | mem=14.14 GB
+2026-04-13 12:57:46,869 | INFO | ▶ START: [Fold3] No-K: tune + evaluate | mem=14.14 GB
+2026-04-13 12:57:50,864 | INFO | Best ABS-mm: tau=0.88 (dev F1=0.5951)
+2026-04-13 12:57:50,864 | INFO | Best REL: gamma=0.74 (dev F1=0.6026)
+2026-04-13 12:59:22,076 | INFO | ✔ END:   [Fold3] No-K: tune + evaluate | 95.21s | mem=14.15 GB
+2026-04-13 12:59:22,076 | INFO | ▶ START: [Fold3] Compute MRR, NDCG@K, P@K | mem=14.15 GB
+2026-04-13 12:59:22,226 | INFO |   MRR=90.64  NDCG@K=71.19  P@K=66.38
+2026-04-13 12:59:22,226 | INFO | ✔ END:   [Fold3] Compute MRR, NDCG@K, P@K | 0.15s | mem=14.15 GB
+2026-04-13 12:59:22,228 | INFO | 
+============================================================
+  RESULTS: Fold3
+============================================================
+2026-04-13 12:59:22,229 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      64.00   64.00 64.00
+No-K (ABS-mm)      75.03   59.15 59.36
+   No-K (REL)      55.40   67.93 50.68
+2026-04-13 12:59:22,849 | INFO | Fold 3 completed in 1010.9s (16.8 min)
+2026-04-13 12:59:22,935 | INFO | ▶ START: [Fold4] Build train/test | mem=9.64 GB
+2026-04-13 12:59:25,822 | INFO | Train issues=591, rows=749,921
+2026-04-13 12:59:25,823 | INFO | Test  issues=147, rows=182,634
+2026-04-13 12:59:25,823 | INFO | ✔ END:   [Fold4] Build train/test | 2.89s | mem=12.76 GB
+2026-04-13 12:59:30,481 | INFO | ▶ START: [Fold4] SBERT encode [issue_full] (749 texts) | mem=12.87 GB
+2026-04-13 12:59:36,742 | INFO | ✔ END:   [Fold4] SBERT encode [issue_full] (749 texts) | 6.26s | mem=12.86 GB
+2026-04-13 12:59:36,743 | INFO | ▶ START: [Fold4] SBERT encode [issue_nl] (749 texts) | mem=12.86 GB
+2026-04-13 12:59:42,856 | INFO | ✔ END:   [Fold4] SBERT encode [issue_nl] (749 texts) | 6.11s | mem=12.86 GB
+2026-04-13 12:59:42,856 | INFO | ▶ START: [Fold4] SBERT encode [issue_title] (749 texts) | mem=12.86 GB
+2026-04-13 12:59:43,399 | INFO | ✔ END:   [Fold4] SBERT encode [issue_title] (749 texts) | 0.54s | mem=12.86 GB
+2026-04-13 12:59:43,400 | INFO | ▶ START: [Fold4] SBERT encode [commit_full] (2352 texts) | mem=12.86 GB
+2026-04-13 13:00:06,230 | INFO | ✔ END:   [Fold4] SBERT encode [commit_full] (2352 texts) | 22.83s | mem=12.86 GB
+2026-04-13 13:00:06,231 | INFO | ▶ START: [Fold4] SBERT encode [commit_msg] (2352 texts) | mem=12.86 GB
+2026-04-13 13:00:08,368 | INFO | ✔ END:   [Fold4] SBERT encode [commit_msg] (2352 texts) | 2.14s | mem=12.86 GB
+2026-04-13 13:00:08,368 | INFO | ▶ START: [Fold4] Build BM25 indices | mem=12.86 GB
+2026-04-13 13:00:18,766 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-13 13:07:10,275 | INFO | ✔ END:   [Fold4] Build BM25 indices | 421.91s | mem=13.56 GB
+2026-04-13 13:07:17,261 | INFO | ▶ START: [Fold4] TF-IDF+SVD [full] (dim=128) | mem=13.78 GB
+2026-04-13 13:07:54,284 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [full] (dim=128) | 37.02s | mem=13.80 GB
+2026-04-13 13:07:54,285 | INFO | ▶ START: [Fold4] TF-IDF+SVD [code] (dim=80) | mem=13.80 GB
+2026-04-13 13:08:23,276 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [code] (dim=80) | 28.99s | mem=13.82 GB
+2026-04-13 13:08:23,276 | INFO | ▶ START: [Fold4] TF-IDF+SVD [nl] (dim=80) | mem=13.82 GB
+2026-04-13 13:08:23,732 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [nl] (dim=80) | 0.46s | mem=13.82 GB
+2026-04-13 13:08:23,732 | INFO | ▶ START: [Fold4] TF-IDF+SVD [title] (dim=64) | mem=13.82 GB
+2026-04-13 13:08:23,916 | INFO | ✔ END:   [Fold4] TF-IDF+SVD [title] (dim=64) | 0.18s | mem=13.82 GB
+2026-04-13 13:08:23,916 | INFO | ▶ START: [Fold4] Transform test SVD | mem=13.82 GB
+2026-04-13 13:08:51,810 | INFO | ✔ END:   [Fold4] Transform test SVD | 27.89s | mem=14.03 GB
+2026-04-13 13:08:51,814 | INFO | ▶ START: [Fold4] Build features: TRAIN | mem=14.03 GB
+2026-04-13 13:10:20,203 | INFO | ✔ END:   [Fold4] Build features: TRAIN | 88.39s | mem=14.56 GB
+2026-04-13 13:10:20,204 | INFO | ▶ START: [Fold4] Build features: TEST | mem=14.56 GB
+2026-04-13 13:10:41,724 | INFO | ✔ END:   [Fold4] Build features: TEST | 21.52s | mem=14.07 GB
+2026-04-13 13:10:41,725 | INFO | ▶ START: [Fold4] Prepare rank data | mem=14.07 GB
+2026-04-13 13:10:41,943 | INFO | Train groups=473, Dev=118, Test=147
+2026-04-13 13:10:41,943 | INFO | ✔ END:   [Fold4] Prepare rank data | 0.22s | mem=14.07 GB
+2026-04-13 13:10:41,946 | INFO | ▶ START: [Fold4] Optuna hyperparameter tuning | mem=14.07 GB
+2026-04-13 13:13:52,751 | INFO | Optuna best trial: 28, NDCG@1=0.8390
+2026-04-13 13:13:52,752 | INFO | Best params: {
+  "learning_rate": 0.09685066104437928,
+  "num_leaves": 42,
+  "min_data_in_leaf": 27,
+  "max_depth": 3,
+  "feature_fraction": 0.6324090428542883,
+  "bagging_fraction": 0.7910873161693434,
+  "lambda_l1": 0.059212267336521046,
+  "lambda_l2": 0.07615321113208409,
+  "min_gain_to_split": 0.00021283587025711602
+}
+2026-04-13 13:13:52,758 | INFO | ✔ END:   [Fold4] Optuna hyperparameter tuning | 190.81s | mem=14.07 GB
+2026-04-13 13:13:52,758 | INFO | ▶ START: [Fold4] Train LambdaMART (tuned) | mem=14.07 GB
+2026-04-13 13:14:06,250 | INFO | Best iteration: 59
+2026-04-13 13:14:06,251 | INFO | Feature importance (gain):
+2026-04-13 13:14:06,251 | INFO |   sbert_full: 22703.93
+2026-04-13 13:14:06,251 | INFO |   sbert_title: 7150.77
+2026-04-13 13:14:06,251 | INFO |   feat_time: 5896.54
+2026-04-13 13:14:06,251 | INFO |   feat_time_dir: 4082.68
+2026-04-13 13:14:06,251 | INFO |   svd_full: 3763.00
+2026-04-13 13:14:06,251 | INFO |   bm25_title: 2324.84
+2026-04-13 13:14:06,251 | INFO |   bm25_nl: 611.43
+2026-04-13 13:14:06,251 | INFO |   feat_file_bn_jaccard: 378.63
+2026-04-13 13:14:06,251 | INFO |   feat_nfiles: 246.48
+2026-04-13 13:14:06,251 | INFO |   feat_diff_size: 203.76
+2026-04-13 13:14:06,251 | INFO |   sbert_nl: 142.55
+2026-04-13 13:14:06,251 | INFO |   svd_code: 140.69
+2026-04-13 13:14:06,251 | INFO |   bm25_code: 113.46
+2026-04-13 13:14:06,251 | INFO |   svd_nl: 104.76
+2026-04-13 13:14:06,251 | INFO |   bm25_full: 44.72
+2026-04-13 13:14:06,251 | INFO |   svd_title: 26.70
+2026-04-13 13:14:06,251 | INFO |   feat_desc_len: 14.35
+2026-04-13 13:14:06,252 | INFO | ✔ END:   [Fold4] Train LambdaMART (tuned) | 13.49s | mem=14.07 GB
+2026-04-13 13:14:06,252 | INFO | ▶ START: [Fold4] Evaluate Known-K (iterative) | mem=14.07 GB
+2026-04-13 13:14:29,940 | INFO | ✔ END:   [Fold4] Evaluate Known-K (iterative) | 23.69s | mem=14.07 GB
+2026-04-13 13:14:29,940 | INFO | ▶ START: [Fold4] No-K: tune + evaluate | mem=14.07 GB
+2026-04-13 13:14:34,178 | INFO | Best ABS-mm: tau=0.82 (dev F1=0.5640)
+2026-04-13 13:14:34,179 | INFO | Best REL: gamma=0.76 (dev F1=0.5648)
+2026-04-13 13:15:57,746 | INFO | ✔ END:   [Fold4] No-K: tune + evaluate | 87.81s | mem=14.07 GB
+2026-04-13 13:15:57,746 | INFO | ▶ START: [Fold4] Compute MRR, NDCG@K, P@K | mem=14.07 GB
+2026-04-13 13:15:57,901 | INFO |   MRR=90.69  NDCG@K=71.10  P@K=66.45
+2026-04-13 13:15:57,901 | INFO | ✔ END:   [Fold4] Compute MRR, NDCG@K, P@K | 0.15s | mem=14.07 GB
+2026-04-13 13:15:57,903 | INFO | 
+============================================================
+  RESULTS: Fold4
+============================================================
+2026-04-13 13:15:57,905 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      65.22   65.22 65.22
+No-K (ABS-mm)      72.80   64.23 59.96
+   No-K (REL)      68.88   65.58 55.64
+2026-04-13 13:15:59,212 | INFO | Fold 4 completed in 996.4s (16.6 min)
+2026-04-13 13:15:59,314 | INFO | ▶ START: [Fold5] Build train/test | mem=9.66 GB
+2026-04-13 13:16:04,661 | INFO | Train issues=593, rows=746,309
+2026-04-13 13:16:04,661 | INFO | Test  issues=145, rows=186,246
+2026-04-13 13:16:04,661 | INFO | ✔ END:   [Fold5] Build train/test | 5.35s | mem=12.78 GB
+2026-04-13 13:16:10,693 | INFO | ▶ START: [Fold5] SBERT encode [issue_full] (749 texts) | mem=12.89 GB
+2026-04-13 13:16:16,932 | INFO | ✔ END:   [Fold5] SBERT encode [issue_full] (749 texts) | 6.24s | mem=12.89 GB
+2026-04-13 13:16:16,932 | INFO | ▶ START: [Fold5] SBERT encode [issue_nl] (749 texts) | mem=12.89 GB
+2026-04-13 13:16:22,939 | INFO | ✔ END:   [Fold5] SBERT encode [issue_nl] (749 texts) | 6.01s | mem=12.89 GB
+2026-04-13 13:16:22,940 | INFO | ▶ START: [Fold5] SBERT encode [issue_title] (749 texts) | mem=12.89 GB
+2026-04-13 13:16:23,486 | INFO | ✔ END:   [Fold5] SBERT encode [issue_title] (749 texts) | 0.55s | mem=12.89 GB
+2026-04-13 13:16:23,487 | INFO | ▶ START: [Fold5] SBERT encode [commit_full] (2352 texts) | mem=12.89 GB
+2026-04-13 13:16:46,017 | INFO | ✔ END:   [Fold5] SBERT encode [commit_full] (2352 texts) | 22.53s | mem=12.89 GB
+2026-04-13 13:16:46,018 | INFO | ▶ START: [Fold5] SBERT encode [commit_msg] (2352 texts) | mem=12.89 GB
+2026-04-13 13:16:48,112 | INFO | ✔ END:   [Fold5] SBERT encode [commit_msg] (2352 texts) | 2.09s | mem=12.89 GB
+2026-04-13 13:16:48,113 | INFO | ▶ START: [Fold5] Build BM25 indices | mem=12.89 GB
+2026-04-13 13:16:58,402 | INFO | Pre-computing BM25 scores for all issues...
+2026-04-13 13:23:28,103 | INFO | ✔ END:   [Fold5] Build BM25 indices | 399.99s | mem=13.57 GB
+2026-04-13 13:23:36,705 | INFO | ▶ START: [Fold5] TF-IDF+SVD [full] (dim=128) | mem=13.78 GB
+2026-04-13 13:24:15,226 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [full] (dim=128) | 38.52s | mem=13.80 GB
+2026-04-13 13:24:15,226 | INFO | ▶ START: [Fold5] TF-IDF+SVD [code] (dim=80) | mem=13.80 GB
+2026-04-13 13:24:44,411 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [code] (dim=80) | 29.18s | mem=13.83 GB
+2026-04-13 13:24:44,412 | INFO | ▶ START: [Fold5] TF-IDF+SVD [nl] (dim=80) | mem=13.83 GB
+2026-04-13 13:24:44,852 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [nl] (dim=80) | 0.44s | mem=13.83 GB
+2026-04-13 13:24:44,853 | INFO | ▶ START: [Fold5] TF-IDF+SVD [title] (dim=64) | mem=13.83 GB
+2026-04-13 13:24:45,073 | INFO | ✔ END:   [Fold5] TF-IDF+SVD [title] (dim=64) | 0.22s | mem=13.83 GB
+2026-04-13 13:24:45,073 | INFO | ▶ START: [Fold5] Transform test SVD | mem=13.83 GB
+2026-04-13 13:25:12,148 | INFO | ✔ END:   [Fold5] Transform test SVD | 27.07s | mem=14.04 GB
+2026-04-13 13:25:12,152 | INFO | ▶ START: [Fold5] Build features: TRAIN | mem=14.04 GB
+2026-04-13 13:26:41,760 | INFO | ✔ END:   [Fold5] Build features: TRAIN | 89.61s | mem=15.17 GB
+2026-04-13 13:26:41,760 | INFO | ▶ START: [Fold5] Build features: TEST | mem=15.17 GB
+2026-04-13 13:27:03,330 | INFO | ✔ END:   [Fold5] Build features: TEST | 21.57s | mem=14.07 GB
+2026-04-13 13:27:03,331 | INFO | ▶ START: [Fold5] Prepare rank data | mem=14.07 GB
+2026-04-13 13:27:03,589 | INFO | Train groups=475, Dev=118, Test=145
+2026-04-13 13:27:03,589 | INFO | ✔ END:   [Fold5] Prepare rank data | 0.26s | mem=14.07 GB
+2026-04-13 13:27:03,590 | INFO | ▶ START: [Fold5] Optuna hyperparameter tuning | mem=14.07 GB
+2026-04-13 13:30:51,939 | INFO | Optuna best trial: 11, NDCG@1=0.8814
+2026-04-13 13:30:51,939 | INFO | Best params: {
+  "learning_rate": 0.09511897882019257,
+  "num_leaves": 70,
+  "min_data_in_leaf": 39,
+  "max_depth": 9,
+  "feature_fraction": 0.7281159932082892,
+  "bagging_fraction": 0.9789880874538219,
+  "lambda_l1": 0.7766709079913451,
+  "lambda_l2": 0.1964101424424174,
+  "min_gain_to_split": 0.0987490035021984
+}
+2026-04-13 13:30:51,944 | INFO | ✔ END:   [Fold5] Optuna hyperparameter tuning | 228.35s | mem=14.07 GB
+2026-04-13 13:30:51,944 | INFO | ▶ START: [Fold5] Train LambdaMART (tuned) | mem=14.07 GB
+2026-04-13 13:31:08,020 | INFO | Best iteration: 60
+2026-04-13 13:31:08,020 | INFO | Feature importance (gain):
+2026-04-13 13:31:08,020 | INFO |   sbert_full: 33878.59
+2026-04-13 13:31:08,020 | INFO |   feat_time: 7661.82
+2026-04-13 13:31:08,020 | INFO |   sbert_title: 5829.81
+2026-04-13 13:31:08,020 | INFO |   feat_time_dir: 5665.44
+2026-04-13 13:31:08,020 | INFO |   svd_full: 5082.12
+2026-04-13 13:31:08,020 | INFO |   bm25_title: 1809.54
+2026-04-13 13:31:08,020 | INFO |   feat_diff_size: 1300.99
+2026-04-13 13:31:08,020 | INFO |   svd_code: 1182.45
+2026-04-13 13:31:08,020 | INFO |   bm25_nl: 758.02
+2026-04-13 13:31:08,020 | INFO |   feat_nfiles: 624.14
+2026-04-13 13:31:08,020 | INFO |   bm25_code: 578.28
+2026-04-13 13:31:08,020 | INFO |   feat_file_bn_jaccard: 555.20
+2026-04-13 13:31:08,020 | INFO |   svd_nl: 548.58
+2026-04-13 13:31:08,020 | INFO |   bm25_full: 536.94
+2026-04-13 13:31:08,020 | INFO |   svd_title: 479.94
+2026-04-13 13:31:08,020 | INFO |   sbert_nl: 452.76
+2026-04-13 13:31:08,020 | INFO |   feat_desc_len: 320.49
+2026-04-13 13:31:08,021 | INFO | ✔ END:   [Fold5] Train LambdaMART (tuned) | 16.08s | mem=14.07 GB
+2026-04-13 13:31:08,021 | INFO | ▶ START: [Fold5] Evaluate Known-K (iterative) | mem=14.07 GB
+2026-04-13 13:31:31,282 | INFO | ✔ END:   [Fold5] Evaluate Known-K (iterative) | 23.26s | mem=14.07 GB
+2026-04-13 13:31:31,282 | INFO | ▶ START: [Fold5] No-K: tune + evaluate | mem=14.07 GB
+2026-04-13 13:31:35,488 | INFO | Best ABS-mm: tau=0.78 (dev F1=0.6168)
+2026-04-13 13:31:35,489 | INFO | Best REL: gamma=0.56 (dev F1=0.6163)
+2026-04-13 13:34:48,632 | INFO | ✔ END:   [Fold5] No-K: tune + evaluate | 197.35s | mem=14.08 GB
+2026-04-13 13:34:48,632 | INFO | ▶ START: [Fold5] Compute MRR, NDCG@K, P@K | mem=14.08 GB
+2026-04-13 13:34:48,788 | INFO |   MRR=87.28  NDCG@K=72.34  P@K=69.02
+2026-04-13 13:34:48,788 | INFO | ✔ END:   [Fold5] Compute MRR, NDCG@K, P@K | 0.16s | mem=14.08 GB
+2026-04-13 13:34:48,790 | INFO | 
+============================================================
+  RESULTS: Fold5
+============================================================
+2026-04-13 13:34:48,792 | INFO | 
+      Setting  Precision  Recall    F1
+      Known-K      67.33   67.33 67.33
+No-K (ABS-mm)      63.60   69.55 60.25
+   No-K (REL)      42.87   79.85 44.98
+2026-04-13 13:34:49,473 | INFO | Fold 5 completed in 1130.3s (18.8 min)
+2026-04-13 13:34:49,480 | INFO | Total 5-fold CV time: 5188.9s (86.5 min)

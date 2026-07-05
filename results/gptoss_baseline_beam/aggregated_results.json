@@ -1,0 +1,42 @@
+{
+  "dataset": "beam",
+  "model": "gpt-oss-120b-mxfp4-00001-of-00003.gguf",
+  "results": {
+    "Known-K": {
+      "P_mean": 46.98,
+      "P_std": 2.18,
+      "R_mean": 46.98,
+      "R_std": 2.18,
+      "F1_mean": 46.98,
+      "F1_std": 2.18,
+      "MRR_mean": 50.91,
+      "MRR_std": 1.55,
+      "NDCG_mean": 47.45,
+      "NDCG_std": 2.07
+    },
+    "Unknown-K-abs": {
+      "P_mean": 78.08,
+      "P_std": 1.62,
+      "R_mean": 53.72,
+      "R_std": 1.95,
+      "F1_mean": 59.48,
+      "F1_std": 1.95,
+      "MRR_mean": 79.61,
+      "MRR_std": 1.33,
+      "NDCG_mean": 58.06,
+      "NDCG_std": 2.09
+    },
+    "Unknown-K-rel": {
+      "P_mean": 51.54,
+      "P_std": 6.64,
+      "R_mean": 38.99,
+      "R_std": 4.57,
+      "F1_mean": 41.64,
+      "F1_std": 5.25,
+      "MRR_mean": 54.43,
+      "MRR_std": 6.72,
+      "NDCG_mean": 41.87,
+      "NDCG_std": 5.39
+    }
+  }
+}

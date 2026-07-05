@@ -1,0 +1,42 @@
+{
+  "dataset": "iceberg",
+  "model": "gpt-oss-120b-mxfp4-00001-of-00003.gguf",
+  "results": {
+    "Known-K": {
+      "P_mean": 52.67,
+      "P_std": 3.36,
+      "R_mean": 52.67,
+      "R_std": 3.36,
+      "F1_mean": 52.67,
+      "F1_std": 3.36,
+      "MRR_mean": 53.84,
+      "MRR_std": 3.36,
+      "NDCG_mean": 52.57,
+      "NDCG_std": 3.39
+    },
+    "Unknown-K-abs": {
+      "P_mean": 84.4,
+      "P_std": 3.35,
+      "R_mean": 60.21,
+      "R_std": 4.07,
+      "F1_mean": 65.34,
+      "F1_std": 4.04,
+      "MRR_mean": 85.66,
+      "MRR_std": 3.77,
+      "NDCG_mean": 63.75,
+      "NDCG_std": 4.55
+    },
+    "Unknown-K-rel": {
+      "P_mean": 55.05,
+      "P_std": 5.51,
+      "R_mean": 42.04,
+      "R_std": 4.71,
+      "F1_mean": 44.68,
+      "F1_std": 4.49,
+      "MRR_mean": 57.9,
+      "MRR_std": 5.22,
+      "NDCG_mean": 45.08,
+      "NDCG_std": 4.61
+    }
+  }
+}

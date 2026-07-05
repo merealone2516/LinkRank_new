@@ -1,0 +1,4 @@
+Setting,Precision,Recall,F1,MRR,NDCG@K
+Known-K,48.37,48.37,48.37,51.38,48.67
+Unknown-K-abs,76.63,51.25,57.58,78.32,56.15
+Unknown-K-rel,50.38,39.63,41.71,52.26,41.62

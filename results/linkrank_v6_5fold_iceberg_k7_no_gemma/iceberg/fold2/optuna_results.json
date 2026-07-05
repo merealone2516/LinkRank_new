@@ -1,0 +1,16 @@
+{
+  "best_trial": 12,
+  "best_ndcg1": 0.9318181818181818,
+  "best_params": {
+    "learning_rate": 0.12160755996245433,
+    "num_leaves": 124,
+    "min_data_in_leaf": 83,
+    "max_depth": 10,
+    "feature_fraction": 0.7343996561622936,
+    "bagging_fraction": 0.8544685803302187,
+    "lambda_l1": 0.006809591572055861,
+    "lambda_l2": 0.21979386188393274,
+    "min_gain_to_split": 0.009297136252772276
+  },
+  "n_trials": 50
+}

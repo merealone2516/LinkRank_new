@@ -1,0 +1,42 @@
+{
+  "dataset": "mxnet",
+  "model": "gpt-oss-120b-mxfp4-00001-of-00003.gguf",
+  "results": {
+    "Known-K": {
+      "P_mean": 46.73,
+      "P_std": 2.71,
+      "R_mean": 46.73,
+      "R_std": 2.71,
+      "F1_mean": 46.73,
+      "F1_std": 2.71,
+      "MRR_mean": 50.06,
+      "MRR_std": 2.99,
+      "NDCG_mean": 47.02,
+      "NDCG_std": 2.86
+    },
+    "Unknown-K-abs": {
+      "P_mean": 66.56,
+      "P_std": 4.08,
+      "R_mean": 49.02,
+      "R_std": 4.08,
+      "F1_mean": 52.19,
+      "F1_std": 4.24,
+      "MRR_mean": 68.35,
+      "MRR_std": 4.41,
+      "NDCG_mean": 50.88,
+      "NDCG_std": 4.37
+    },
+    "Unknown-K-rel": {
+      "P_mean": 36.63,
+      "P_std": 2.48,
+      "R_mean": 31.25,
+      "R_std": 1.93,
+      "F1_mean": 31.58,
+      "F1_std": 1.52,
+      "MRR_mean": 40.04,
+      "MRR_std": 4.16,
+      "NDCG_mean": 32.74,
+      "NDCG_std": 1.9
+    }
+  }
+}

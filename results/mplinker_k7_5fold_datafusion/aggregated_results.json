@@ -1,0 +1,70 @@
+{
+  "dataset": "datafusion",
+  "model": "roberta-base (multi-template prompt + PGD)",
+  "n_folds": 2,
+  "note": "Only 2 of 5 folds completed before manual stop",
+  "total_time_minutes": 634.0,
+  "hyperparameters": {
+    "max_seq_len": 512,
+    "train_epochs": 20,
+    "batch_size": 8,
+    "learning_rate": 0.0001,
+    "neg_ratio": 3,
+    "adv_epsilon": 0.5,
+    "adv_alpha": 0.2,
+    "adv_warmup": 3,
+    "patience": 7
+  },
+  "metrics_by_fold": {
+    "known_k_f1": [
+      31.97,
+      11.56
+    ],
+    "abs_mm_f1": [
+      16.37,
+      18.52
+    ],
+    "rel_f1": [
+      16.32,
+      18.45
+    ],
+    "mrr": [
+      57.43,
+      23.04
+    ],
+    "ndcg_at_k": [
+      35.29,
+      11.82
+    ],
+    "p_at_k": [
+      31.97,
+      11.56
+    ]
+  },
+  "metrics_mean_std": {
+    "known_k_f1": {
+      "mean": 21.765,
+      "std": 10.205
+    },
+    "abs_mm_f1": {
+      "mean": 17.445,
+      "std": 1.0749999999999993
+    },
+    "rel_f1": {
+      "mean": 17.384999999999998,
+      "std": 1.0649999999999995
+    },
+    "mrr": {
+      "mean": 40.235,
+      "std": 17.195
+    },
+    "ndcg_at_k": {
+      "mean": 23.555,
+      "std": 11.735
+    },
+    "p_at_k": {
+      "mean": 21.765,
+      "std": 10.205
+    }
+  }
+}

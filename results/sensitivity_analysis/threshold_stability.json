@@ -1,0 +1,182 @@
+{
+  "pytorch": {
+    "no_gemma": {
+      "tau_per_fold": [
+        0.86,
+        0.92,
+        0.88,
+        0.94,
+        0.84
+      ],
+      "tau_mean": 0.888,
+      "tau_std": 0.0371,
+      "tau_min": 0.84,
+      "tau_max": 0.94,
+      "tau_range": 0.1,
+      "tau_dev_f1_mean": 77.98,
+      "gamma_per_fold": [
+        0.68,
+        0.84,
+        0.66,
+        0.88,
+        0.74
+      ],
+      "gamma_mean": 0.76,
+      "gamma_std": 0.0867,
+      "gamma_min": 0.66,
+      "gamma_max": 0.88,
+      "gamma_range": 0.22,
+      "gamma_dev_f1_mean": 78.45
+    }
+  },
+  "beam": {
+    "no_gemma": {
+      "tau_per_fold": [
+        0.94,
+        0.82,
+        0.9,
+        0.94,
+        0.86
+      ],
+      "tau_mean": 0.892,
+      "tau_std": 0.0466,
+      "tau_min": 0.82,
+      "tau_max": 0.94,
+      "tau_range": 0.12,
+      "tau_dev_f1_mean": 64.32,
+      "gamma_per_fold": [
+        0.92,
+        0.6,
+        0.5,
+        0.68,
+        0.66
+      ],
+      "gamma_mean": 0.672,
+      "gamma_std": 0.1389,
+      "gamma_min": 0.5,
+      "gamma_max": 0.92,
+      "gamma_range": 0.42,
+      "gamma_dev_f1_mean": 65.13
+    }
+  },
+  "dubbo": {
+    "no_gemma": {
+      "tau_per_fold": [
+        0.9,
+        0.74,
+        0.92,
+        0.92,
+        0.86
+      ],
+      "tau_mean": 0.868,
+      "tau_std": 0.0676,
+      "tau_min": 0.74,
+      "tau_max": 0.92,
+      "tau_range": 0.18,
+      "tau_dev_f1_mean": 75.57,
+      "gamma_per_fold": [
+        0.72,
+        0.42,
+        0.84,
+        0.84,
+        0.68
+      ],
+      "gamma_mean": 0.7,
+      "gamma_std": 0.1539,
+      "gamma_min": 0.42,
+      "gamma_max": 0.84,
+      "gamma_range": 0.42,
+      "gamma_dev_f1_mean": 75.01
+    }
+  },
+  "iceberg": {
+    "no_gemma": {
+      "tau_per_fold": [
+        0.9,
+        0.78,
+        0.88,
+        0.7,
+        0.84
+      ],
+      "tau_mean": 0.82,
+      "tau_std": 0.0727,
+      "tau_min": 0.7,
+      "tau_max": 0.9,
+      "tau_range": 0.2,
+      "tau_dev_f1_mean": 73.94,
+      "gamma_per_fold": [
+        0.78,
+        0.5,
+        0.74,
+        0.36,
+        0.7
+      ],
+      "gamma_mean": 0.616,
+      "gamma_std": 0.1602,
+      "gamma_min": 0.36,
+      "gamma_max": 0.78,
+      "gamma_range": 0.42,
+      "gamma_dev_f1_mean": 72.83
+    }
+  },
+  "datafusion": {
+    "no_gemma": {
+      "tau_per_fold": [
+        0.78,
+        0.8,
+        0.88,
+        0.82,
+        0.78
+      ],
+      "tau_mean": 0.812,
+      "tau_std": 0.0371,
+      "tau_min": 0.78,
+      "tau_max": 0.88,
+      "tau_range": 0.1,
+      "tau_dev_f1_mean": 59.67,
+      "gamma_per_fold": [
+        0.5,
+        0.6,
+        0.74,
+        0.76,
+        0.56
+      ],
+      "gamma_mean": 0.632,
+      "gamma_std": 0.1017,
+      "gamma_min": 0.5,
+      "gamma_max": 0.76,
+      "gamma_range": 0.26,
+      "gamma_dev_f1_mean": 60.0
+    }
+  },
+  "mxnet": {
+    "no_gemma": {
+      "tau_per_fold": [
+        0.92,
+        0.86,
+        0.86,
+        0.8,
+        0.88
+      ],
+      "tau_mean": 0.864,
+      "tau_std": 0.0388,
+      "tau_min": 0.8,
+      "tau_max": 0.92,
+      "tau_range": 0.12,
+      "tau_dev_f1_mean": 62.59,
+      "gamma_per_fold": [
+        0.76,
+        0.66,
+        0.78,
+        0.6,
+        0.62
+      ],
+      "gamma_mean": 0.684,
+      "gamma_std": 0.0731,
+      "gamma_min": 0.6,
+      "gamma_max": 0.78,
+      "gamma_range": 0.18,
+      "gamma_dev_f1_mean": 63.57
+    }
+  }
+}

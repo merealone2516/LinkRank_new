@@ -1,0 +1,42 @@
+{
+  "dataset": "datafusion",
+  "model": "gpt-oss-120b-mxfp4-00001-of-00003.gguf",
+  "results": {
+    "Known-K": {
+      "P_mean": 35.86,
+      "P_std": 1.7,
+      "R_mean": 35.86,
+      "R_std": 1.7,
+      "F1_mean": 35.86,
+      "F1_std": 1.7,
+      "MRR_mean": 37.85,
+      "MRR_std": 2.22,
+      "NDCG_mean": 36.07,
+      "NDCG_std": 1.83
+    },
+    "Unknown-K-abs": {
+      "P_mean": 82.04,
+      "P_std": 2.49,
+      "R_mean": 46.88,
+      "R_std": 1.11,
+      "F1_mean": 55.06,
+      "F1_std": 1.2,
+      "MRR_mean": 83.02,
+      "MRR_std": 1.69,
+      "NDCG_mean": 53.98,
+      "NDCG_std": 1.23
+    },
+    "Unknown-K-rel": {
+      "P_mean": 52.31,
+      "P_std": 2.06,
+      "R_mean": 34.6,
+      "R_std": 1.38,
+      "F1_mean": 38.92,
+      "F1_std": 1.14,
+      "MRR_mean": 54.87,
+      "MRR_std": 2.13,
+      "NDCG_mean": 39.0,
+      "NDCG_std": 1.33
+    }
+  }
+}
